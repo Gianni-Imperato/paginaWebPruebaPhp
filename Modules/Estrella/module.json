@@ -1,0 +1,11 @@
+{
+    "name": "Estrella",
+    "alias": "estrella",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Estrella\\Providers\\EstrellaServiceProvider"
+    ],
+    "files": []
+}

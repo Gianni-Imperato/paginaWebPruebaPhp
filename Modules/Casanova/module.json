@@ -1,0 +1,11 @@
+{
+    "name": "Casanova",
+    "alias": "casanova",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Casanova\\Providers\\CasanovaServiceProvider"
+    ],
+    "files": []
+}

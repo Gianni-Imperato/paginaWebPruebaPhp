@@ -1,0 +1,11 @@
+{
+    "name": "Shaya",
+    "alias": "shaya",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Shaya\\Providers\\ShayaServiceProvider"
+    ],
+    "files": []
+}

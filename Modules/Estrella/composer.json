@@ -1,0 +1,30 @@
+{
+    "name": "nwidart/estrella",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Estrella\\": "app/",
+            "Modules\\Estrella\\Database\\Factories\\": "database/factories/",
+            "Modules\\Estrella\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Estrella\\Tests\\": "tests/"
+        }
+    }
+}

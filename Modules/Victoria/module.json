@@ -1,0 +1,11 @@
+{
+    "name": "Victoria",
+    "alias": "victoria",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Victoria\\Providers\\VictoriaServiceProvider"
+    ],
+    "files": []
+}

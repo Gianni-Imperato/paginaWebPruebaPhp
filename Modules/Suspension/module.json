@@ -1,0 +1,11 @@
+{
+    "name": "Suspension",
+    "alias": "suspension",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Suspension\\Providers\\SuspensionServiceProvider"
+    ],
+    "files": []
+}

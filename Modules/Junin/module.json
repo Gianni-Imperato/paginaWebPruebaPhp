@@ -1,0 +1,11 @@
+{
+    "name": "Junin",
+    "alias": "junin",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Junin\\Providers\\JuninServiceProvider"
+    ],
+    "files": []
+}
