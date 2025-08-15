@@ -2,9 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use Modules\Casanova\Http\Controllers\CasaproductoController;
-use Modules\Casanova\Http\Controllers\CasaSipedController;
+use Modules\Casanova\Http\Controllers\CasasipedController;
 use Modules\Casanova\Http\Controllers\CasavencomController;
 use Modules\Casanova\Http\Controllers\CasapagosController;
+use Modules\Casanova\Http\Controllers\CasainvtraController;
 
 
 Route::middleware('auth')->group(function () {
@@ -28,6 +29,11 @@ Route::middleware('auth')->group(function () {
         Route::controller(CasapagosController::class)->group(function () {
             Route::get('/casapagos', 'index')->name('casapagos.index');
             Route::post('/casapagos', 'show')->name('casapagos.show');
+        });
+
+        Route::controller(CasainvtraController::class)->group(function () {
+            Route::get('/casainvtra', 'index')->name('casainvtra.index');
+            Route::post('/casainvtra', 'show')->name('casainvtra.show');
         });
 });
 

@@ -2,9 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use Modules\Junin\Http\Controllers\JuniproductoController;
-use Modules\Junin\Http\Controllers\JuniSipedController;
+use Modules\Junin\Http\Controllers\JunisipedController;
 use Modules\Junin\Http\Controllers\JunivencomController;
 use Modules\Junin\Http\Controllers\JunipagosController;
+use Modules\Junin\Http\Controllers\JuniinvtraController;
 
 Route::middleware('auth')->group(function () {
     Route::controller(JuniproductoController::class)->group(function () {
@@ -28,5 +29,10 @@ Route::middleware('auth')->group(function () {
     Route::controller(junipagosController::class)->group(function () {
         Route::get('/junipagos', 'index')->name('junipagos.index');
         Route::post('/junipagos', 'show')->name('junipagos.show');
+    });
+
+    Route::controller(juniinvtraController::class)->group(function () {
+        Route::get('/juniinvtra', 'index')->name('juniinvtra.index');
+        Route::post('/juniinvtra', 'show')->name('juniinvtra.show');
     });
 });

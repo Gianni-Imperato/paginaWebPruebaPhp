@@ -15,10 +15,10 @@ class CasaproductoController extends Controller
     {
         if (request('buscarpor')){
             $search = request('buscarpor');
-            $datos = casaproducto::buscar($search)->Paginate(10)
+            $datos = casaproducto::buscar($search)->Paginate(30)
                 ->withQueryString();
         }else{
-            $datos = casaproducto::orderBy('id', 'desc')->Paginate(10);
+            $datos = casaproducto::orderBy('id', 'desc')->Paginate(30);
         }
         return view('casanova::producto.index',compact('datos'));
 

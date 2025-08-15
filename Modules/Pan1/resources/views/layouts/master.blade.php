@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    @yield('content')
+    @yield('contenido.contenido')
 
     {{-- Vite JS --}}
     {{-- {{ module_vite('build-pan1', 'resources/assets/js/app.js') }} --}}

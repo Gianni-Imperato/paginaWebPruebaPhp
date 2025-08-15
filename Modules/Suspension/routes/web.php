@@ -2,9 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use Modules\Suspension\Http\Controllers\SuspproductoController;
-use Modules\Suspension\Http\Controllers\SuspSipedController;
+use Modules\Suspension\Http\Controllers\SuspsipedController;
 use Modules\Suspension\Http\Controllers\SuspvencomController;
 use Modules\Suspension\Http\Controllers\SusppagosController;
+use Modules\Suspension\Http\Controllers\SuspinvtraController;
+
 
 Route::middleware('auth')->group(function () {
 
@@ -30,4 +32,10 @@ Route::middleware('auth')->group(function () {
         Route::get('/susppagos', 'index')->name('susppagos.index');
         Route::post('/susppagos', 'show')->name('susppagos.show');
     });
+
+    Route::controller(suspinvtraController::class)->group(function () {
+        Route::get('/suspinvtra', 'index')->name('suspinvtra.index');
+        Route::post('/suspinvtra', 'show')->name('suspinvtra.show');
+    });
+
 });

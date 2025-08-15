@@ -10,7 +10,7 @@ class pan2producto extends Model
 {
     use HasFactory;
 
-    protected $table = 'producto_Pan2';
+    protected $table = 'producto_pan2';
 
     protected $guarded = [];
 

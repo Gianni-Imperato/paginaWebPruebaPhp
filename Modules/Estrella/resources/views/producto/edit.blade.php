@@ -5,17 +5,17 @@
 <div class="row">
     
     <div class="row">
-    
-        <form action="{{route('estrproducto.update', $producto->id)}}" method="post" enctype="multipart/form-data">
-            @csrf
-            @method('PUT');
-             @include('estrella::producto.form',['modo'=>'editar'])   
+        <div class="card-body">
         
-        
-        </form>
+            <form action="{{route('estrproducto.update', $producto->id)}}" method="post" enctype="multipart/form-data">
+                @csrf
+                @method('PUT');
+                @include('estrella::producto.form',['modo'=>'editar'])   
+            
+            
+            </form>
+        </div>
     </div>
-        
-    </form>
 </div>
 
 @endsection

@@ -9,16 +9,18 @@ use Modules\Victoria\Models\{victproducto};
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
 
+use Modules\Victoria\Models\catalogo;
+
 class VictproductoController extends Controller
 {
     public function index()
     {
         if (request('buscarpor')){
             $search = request('buscarpor');
-            $datos = victproducto::buscar($search)->Paginate(10)
+            $datos = victproducto::buscar($search)->Paginate(30)
                 ->withQueryString();
         }else{
-            $datos = victproducto::orderBy('id', 'desc')->Paginate(10);
+            $datos = victproducto::orderBy('id', 'desc')->Paginate(30);
         }
         return view('victoria::producto.index',compact('datos'));
 

@@ -60,7 +60,7 @@ class SuspproductoController extends Controller
             Storage::delete('public/'.$producto->clase);
             $datos['clase']=$request->file('clase')->store('uploads','public');
         }
-        producto::where('id','=',$id)->update($datos);
+        suspproducto::where('id','=',$id)->update($datos);
         return redirect('suspproducto')->with('mensaje','producto actualizado con exito');
 
     }

@@ -2,9 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use Modules\Estrella\Http\Controllers\EstrproductoController;
-use Modules\Estrella\Http\Controllers\EstrSipedController;
+use Modules\Estrella\Http\Controllers\EstrsipedController;
 use Modules\Estrella\Http\Controllers\EstrvencomController;
 use Modules\Estrella\Http\Controllers\EstrpagosController;
+use Modules\Estrella\Http\Controllers\EstrinvtraController;
 
 
 Route::middleware('auth')->group(function () {
@@ -30,4 +31,10 @@ Route::middleware('auth')->group(function () {
         Route::get('/estrpagos', 'index')->name('estrpagos.index');
         Route::post('/estrpagos', 'show')->name('estrpagos.show');
     });
+
+    Route::controller(estrinvtraController::class)->group(function () {
+        Route::get('/estrinvtra', 'index')->name('estrinvtra.index');
+        Route::post('/estrinvtra', 'show')->name('estrinvtra.show');
+    });
+
 });

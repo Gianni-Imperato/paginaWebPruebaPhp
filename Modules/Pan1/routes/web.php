@@ -2,14 +2,16 @@
 
 use Illuminate\Support\Facades\Route;
 use Modules\Pan1\Http\Controllers\Pan1productoController;
-use Modules\Pan1\Http\Controllers\Pan1SipedController;
+use Modules\Pan1\Http\Controllers\Pan1sipedController;
 use Modules\Pan1\Http\Controllers\Pan1vencomController;
 use Modules\Pan1\Http\Controllers\Pan1pagosController;
+use Modules\Pan1\Http\Controllers\Pan1invtraController;
 
 Route::middleware('auth')->group(function () {
     Route::controller(Pan1productoController::class)->group(function () {
         Route::get('/pan1producto', 'index')->name('pan1producto.index');
         Route::post('/store', 'store')->name('pan1producto.store');
+        Route::get('/pan1producto/{id}/show', 'show')->name('pan1producto.show');
         //Route::delete('/pan1producto/{id}', 'destroy')->name('pan1producto.destroy');
         Route::get('/pan1producto/{id}/edit', 'edit')->name('pan1producto.edit');
         Route::put('/pan1producto/{id}', 'update')->name('pan1producto.update');
@@ -32,6 +34,10 @@ Route::middleware('auth')->group(function () {
         Route::post('/pan1pagos', 'show')->name('pan1pagos.show');
     });
 
+    Route::controller(Pan1invtraController::class)->group(function () {
+        Route::get('/pan1invtra', 'index')->name('pan1invtra.index');
+        Route::post('/pan1invtra', 'show')->name('pan1invtra.show');
+    });
 
     //Route::controller(ProductoController::class)->group(function () {
     //    Route::get('/producto/{id}', 'destroy')->name('producto.destroy');

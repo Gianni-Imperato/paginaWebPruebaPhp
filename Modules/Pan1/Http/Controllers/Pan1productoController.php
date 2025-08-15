@@ -74,10 +74,14 @@ class Pan1productoController extends Controller
 
     public function show($id)
     {
+        $producto = new pan1producto;
+        $producto = pan1producto::findOrFail($id);
+        return view('pan1::producto.ver', compact('producto'));
     }
 
     public function edit($id)
     {
+
 
         $producto = new pan1producto;
         $producto = pan1producto::findOrFail($id);

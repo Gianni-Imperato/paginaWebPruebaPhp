@@ -2,9 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use Modules\Panteon2\Http\Controllers\Pan2productoController;
-use Modules\Panteon2\Http\Controllers\Pan2SipedController;
+use Modules\Panteon2\Http\Controllers\Pan2sipedController;
 use Modules\Panteon2\Http\Controllers\Pan2vencomController;
 use Modules\Panteon2\Http\Controllers\Pan2pagosController;
+use Modules\Panteon2\Http\Controllers\Pan2invtraController;
 
 Route::middleware('auth')->group(function () {
     Route::controller(Pan2productoController::class)->group(function () {
@@ -28,5 +29,10 @@ Route::middleware('auth')->group(function () {
     Route::controller(Pan2pagosController::class)->group(function () {
         Route::get('/pan2pagos', 'index')->name('pan2pagos.index');
         Route::post('/pan2pagos', 'show')->name('pan2pagos.show');
+    });
+
+    Route::controller(Pan2invtraController::class)->group(function () {
+        Route::get('/pan2invtra', 'index')->name('pan2invtra.index');
+        Route::post('/pan2invtra', 'show')->name('pan2invtra.show');
     });
 });

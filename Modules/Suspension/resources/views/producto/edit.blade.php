@@ -5,17 +5,14 @@
 <div class="row">
     
     <div class="row">
-    
-        <form action="{{route('suspproducto.update', $producto->id)}}" method="post" enctype="multipart/form-data">
-            @csrf
-            @method('PUT');
-             @include('suspension::producto.form',['modo'=>'editar'])   
-        
-        
-        </form>
+        <div class="card-body">
+            <form action="{{route('suspproducto.update', $producto->id)}}" method="post" enctype="multipart/form-data">
+                @csrf
+                @method('PUT');
+                @include('suspension::producto.form',['modo'=>'editar'])   
+            </form>
+        </div>    
     </div>
-        
-    </form>
 </div>
 
 @endsection

@@ -5,6 +5,7 @@ use Modules\Shai\Http\Controllers\ShaiproductoController;
 use Modules\Shai\Http\Controllers\ShaisipedController;
 use Modules\Shai\Http\Controllers\ShaivencomController;
 use Modules\Shai\Http\Controllers\ShaipagosController;
+use Modules\Shai\Http\Controllers\ShaiinvtraController;
 
 Route::middleware('auth')->group(function () {
 
@@ -14,7 +15,6 @@ Route::middleware('auth')->group(function () {
         Route::get('/shaiproducto/{id}/edit', 'edit')->name('shaiproducto.edit');
         Route::put('/shaiproducto/{id}', 'update')->name('shaiproducto.update');
     });
-
 
     Route::controller(ShaisipedController::class)->group(function () {
         Route::get('/shaisiped', 'index')->name('shaisiped.index');
@@ -31,6 +31,10 @@ Route::middleware('auth')->group(function () {
         Route::post('/shaipagos', 'show')->name('shaipagos.show');
     });
 
+    Route::controller(ShaiinvtraController::class)->group(function () {
+        Route::get('/shaiinvtra', 'index')->name('shaiinvtra.index');
+        Route::post('/shaiinvtra', 'show')->name('shaiinvtra.show');
+    });
 });
 
 

@@ -20,7 +20,7 @@ class VictvencomController extends Controller
         $sale = victvencom::where('fec_fac', '>=', $desde)
                         ->where('fec_fac', '<=', $hasta)
                         ->orderby('nro_fac', 'asc')
-                        ->get();
+                        ->Paginate(10);
         return view('victoria::sales.index', compact('sale','desde','hasta'));
     }
 
