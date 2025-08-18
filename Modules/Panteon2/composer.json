@@ -1,0 +1,30 @@
+{
+    "name": "nwidart/panteon2",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Panteon2\\": "app/",
+            "Modules\\Panteon2\\Database\\Factories\\": "database/factories/",
+            "Modules\\Panteon2\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Panteon2\\Tests\\": "tests/"
+        }
+    }
+}

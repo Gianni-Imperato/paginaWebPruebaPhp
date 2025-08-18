@@ -1,0 +1,30 @@
+{
+    "name": "nwidart/casanova",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Casanova\\": "app/",
+            "Modules\\Casanova\\Database\\Factories\\": "database/factories/",
+            "Modules\\Casanova\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Casanova\\Tests\\": "tests/"
+        }
+    }
+}

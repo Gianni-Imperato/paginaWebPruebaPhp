@@ -1,0 +1,11 @@
+{
+    "name": "Super1212",
+    "alias": "super1212",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Super1212\\Providers\\Super1212ServiceProvider"
+    ],
+    "files": []
+}

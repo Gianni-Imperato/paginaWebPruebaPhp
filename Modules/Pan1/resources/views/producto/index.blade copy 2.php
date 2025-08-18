@@ -1,0 +1,88 @@
+@extends('principal')
+
+@section('contenido')
+
+<div class="card">
+
+  <div class='card-body'>
+      <div class="row" style="margin-left: 2em" style="margin-top: -5em">
+        <span><h3 style="color: #39c">Producto</h3></span>
+      </div>
+
+          @if(Session::has('mensaje'))
+            {{Session::get('mensaje')}}
+          @endif
+
+          <!--
+          <div class="row">
+            <a href="create" class="btn btn-outline-success my-2 my-sm-0"> Nuevo</a>
+          </div>
+          -->
+
+          <div>
+            <nav class="navbar navbar-light bg-light">
+              <form class="form-inline">
+                <input name="buscarpor" class="form-control mr-sm-2" type="search" placeholder="buscar" aria-label="Search" :value="request(buscarpor)">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+              </form>
+            </nav>
+
+          </div>
+            <!--
+            <form class="grown" autocomplete="off">
+              <input name="search" type="search" class="mt-1 block w-1/3" placeholder="Buscar" :value="request(search)" >
+            </form>
+            -->
+          <div class="row">
+              <table class="table table-hover" style="background-color:  #e6e6e6">
+                <thead class="thead-light">
+                  <tr>
+                    <th>#</th>
+                    <th>FOTO</th>
+                    <th>COD ALTERNO</th>
+                    <th>CODIGO</th>
+                    <th>DESCRIPCION</th>
+                    <th>PRECIO</th>
+                    <th>CANTIDAD</th>
+                    <th>COSTO</th>
+                    <th>COD_TIENDA</th>
+                    <th>FECHA ING</th>
+                    <th>Acciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  @foreach ($datos as $producto)
+                    <tr>
+                        <td>{{ $producto->id }}</td>
+                        <td>
+                          <img class="img-thumbnail img-fluid" src="{{ asset('storage').'/'.$producto->clase }}" width="100" alt="">
+                        </td>
+                        <td>{{ $producto->cod_alter }}</td>
+                        <td>{{ $producto->cod_arti }}</td>
+                        <td>{{ $producto->des_arti }}</td>
+                        <td>{{ $producto->pvp_arti }}</td>
+                        <td>{{ $producto->can_exis }}</td>
+                        <td>{{ $producto->coso }}</td>
+                        <td>{{ $producto->cod_suc }}</td>
+                        <td>{{ $producto->fec_ing }}</td>
+                        <td>
+                          <a href="{{url('/pan1producto/'.$producto->id.'/edit')}}" class="btn btn-warning">Edit</a> 
+                          | 
+                          <form action="{{route('pan1producto.destroy', $producto->id)}}" class="d-inline" method="post">
+                            @csrf
+                            {{ method_field('DELETE')}}
+                            <input class="btn btn-danger" type="submit" onclick="return confirm('Quires eliminar el registro?')" value="Eliminar">
+                          </form>
+                        </td>
+                      </tr>
+                    @endforeach
+                </tbody>
+              </table>
+              {{ $datos->links()  }}
+          </div>
+
+</div>
+</div>
+
+
+@endsection

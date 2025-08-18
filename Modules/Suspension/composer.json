@@ -1,0 +1,30 @@
+{
+    "name": "nwidart/suspension",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Suspension\\": "app/",
+            "Modules\\Suspension\\Database\\Factories\\": "database/factories/",
+            "Modules\\Suspension\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Suspension\\Tests\\": "tests/"
+        }
+    }
+}

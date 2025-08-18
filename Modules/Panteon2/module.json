@@ -1,0 +1,11 @@
+{
+    "name": "Panteon2",
+    "alias": "panteon2",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Panteon2\\Providers\\Panteon2ServiceProvider"
+    ],
+    "files": []
+}

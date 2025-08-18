@@ -1,0 +1,30 @@
+{
+    "name": "nwidart/super1212",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Super1212\\": "app/",
+            "Modules\\Super1212\\Database\\Factories\\": "database/factories/",
+            "Modules\\Super1212\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Super1212\\Tests\\": "tests/"
+        }
+    }
+}

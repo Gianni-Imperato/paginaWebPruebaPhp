@@ -1,0 +1,11 @@
+{
+    "name": "Shai",
+    "alias": "shai",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Shai\\Providers\\ShaiServiceProvider"
+    ],
+    "files": []
+}
