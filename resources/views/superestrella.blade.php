@@ -9,8 +9,8 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/logoCorporacionPestanas.ico" rel="Icono Corporación Super Repuestos">
-  <link href="assets/img/logoCorporacionPestanas.ico" rel="Icono Corporación Super Repuestos">
+  <link href="{{asset('assets/img/logoCorporacionPestanas.ico')}}" rel="Icono Corporación Super Repuestos">
+  <link href="{{asset('assets/img/logoCorporacionPestanas.ico')}}" rel="Icono Corporación Super Repuestos">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -23,14 +23,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="{{asset('assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{asset('assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{asset('assets/vendor/aos/aos.css')}}" rel="stylesheet">
+  <link href="{{asset('assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+  <link href="{{asset('assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="{{asset('assets/css/main.css')}}" rel="stylesheet" type="text/css" />
 
   <!-- =======================================================
   * Template Name: Gp
@@ -48,7 +48,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/pruebaLogo.png" alt="logoCorporacionSuper">
+        <img src="{{asset('assets/images/pruebaLogo.png')}}" alt="logoCorporacionSuper">
         <!-- <h1 class="sitename">Corporación SUPER</h1> -->
         <!-- <span>.</span> -->
       </a>
@@ -101,7 +101,7 @@
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
       <div class="heading heading-con-imagen">
-        <img src="assets/img/imagenesTiendas/imagenTiendaEstrella/imagenFondoEstrella.jpg" alt="Flyer Super Estrella" class="imagen-hero">
+        <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenFondoEstrella.jpg')}}" alt="Flyer Super Estrella" class="imagen-hero">
         <div class="contenido-heading text-center">
           <div class="container">
             <div class="row d-flex justify-content-center">
@@ -153,19 +153,19 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/imagenesTiendas/imagenTiendaEstrella/imagenTiendaEstrella2.jpeg" alt="Tienda Super Estrella 1">
+                  <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenTiendaEstrella2.jpeg')}}" alt="Tienda Super Estrella 1">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/imagenesTiendas/imagenTiendaEstrella/imagenTiendaEstrella4.jpeg" alt="Tienda Super Estrella 2">
+                  <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenTiendaEstrella4.jpeg')}}" alt="Tienda Super Estrella 2">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/imagenesTiendas/imagenTiendaEstrella/imagenTiendaEstrella3.jpeg" alt="Tienda Super Estrella 3">
+                  <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenTiendaEstrella3.jpeg')}}" alt="Tienda Super Estrella 3">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/imagenesTiendas/imagenTiendaEstrella/imagenTiendaEstrella1.jpeg" alt="Tienda Super Estrella 4">
+                  <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenTiendaEstrella1.jpeg')}}" alt="Tienda Super Estrella 4">
                 </div>
 
               </div>
@@ -233,40 +233,40 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="assets/img/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella3.jpeg" class="img-fluid" alt="">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella3.jpeg')}}" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Bomba de Dirección, Chevrolet</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo Fiat, Volkswagen y Renault, tambien somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="assets/img/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella3.jpeg" title="Bomba de Dirección, Chevrolet"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella3.jpeg')}}" title="Bomba de Dirección, Chevrolet"
                   data-gallery="portfolio-gallery-estrella" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                <a href="" title="More Details" class="details-link"><i
                     class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="assets/img/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella1.jpeg" class="img-fluid" alt="">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella1.jpeg')}}" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Kit de Crochet, Hyundai</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo Fiat, Volkswagen y Renault, tambien somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p></p>
-                <a href="assets/img/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella1.jpeg" title="Kit de Crochet, Hyundai"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella1.jpeg')}}" title="Kit de Crochet, Hyundai"
                   data-gallery="portfolio-gallery-estrella" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                <a href="" title="More Details" class="details-link"><i
                     class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="assets/img/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella2.jpeg" class="img-fluid" alt="">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella2.jpeg')}}" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Cigueñal, Chevrolet</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo Fiat, Volkswagen y Renault, tambien somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p></p>
-                <a href="assets/img/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella2.jpeg" title="Cigueñal, Chevrolet"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella2.jpeg')}}" title="Cigueñal, Chevrolet"
                   data-gallery="portfolio-gallery-estrella" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                <a href="" title="More Details" class="details-link"><i
                     class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
@@ -327,7 +327,7 @@
               <div class="video-item">
                 <div class="video-wrapper">
                   <video controls preload="metadata">
-                    <source src="assets/img/videosTiendas/videosUbicacionTiendas/videoUbicacionEstrella.mp4"
+                    <source src="{{asset('assets/images/videosTiendas/videosUbicacionTiendas/videoUbicacionEstrella.mp4')}}"
                       type="video/mp4"> Tu navegador no soporta el elemento de video.
                   </video>
                 </div>
@@ -341,7 +341,7 @@
               <div class="video-item">
                 <div class="video-wrapper">
                   <video controls preload="metadata">
-                    <source src="assets/img/videosTiendas/videosTiendaEstrella/promocionEstrella1.mp4"
+                    <source src="{{asset('assets/images/videosTiendas/videosTiendaEstrella/promocionEstrella1.mp4')}}"
                       type="video/mp4"> Tu navegador no soporta el elemento de video.
                   </video>
                 </div>
@@ -355,7 +355,7 @@
               <div class="video-item">
                 <div class="video-wrapper">
                   <video controls preload="metadata">
-                    <source src="assets/img/videosTiendas/videosTiendaEstrella/promocionEstrella2.mp4"
+                    <source src="{{asset('assets/images/videosTiendas/videosTiendaEstrella/promocionEstrella2.mp4')}}"
                       type="video/mp4"> Tu navegador no soporta el elemento de video.
                   </video>
                 </div>
@@ -369,7 +369,7 @@
               <div class="video-item">
                 <div class="video-wrapper">
                   <video controls preload="metadata">
-                    <source src="assets/img/videosTiendas/videosTiendaEstrella/promocionEstrella3.mp4"
+                    <source src="{{asset('assets/images/videosTiendas/videosTiendaEstrella/promocionEstrella3.mp4')}}"
                       type="video/mp4"> Tu navegador no soporta el elemento de video.
                   </video>
                 </div>
@@ -399,7 +399,7 @@
       <!-- Compact Payment Methods Section -->
       <section id="payment-methods" class="compact-payment-methods section dark-background">
 
-        <img src="assets/img/iconosMetodoPago/imagenFondoMetodoPago.jpg" class="payment-methods-bg" alt="Fondo de métodos de pago">
+        <img src="{{asset('assets/images/iconosMetodoPago/imagenFondoMetodoPago.jpg')}}" class="payment-methods-bg" alt="Fondo de métodos de pago">
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -410,27 +410,27 @@
 
           <div class="compact-payment-grid">
             <div class="compact-payment-item" data-aos="fade-in" data-aos-delay="150">
-              <img src="assets/img/iconosMetodoPago/iconoMetodoPagoMaestro.png" alt="Maestro">
+              <img src="{{asset('assets/images/iconosMetodoPago/iconoMetodoPagoMaestro.png')}}" alt="Maestro">
             </div>
 
             <div class="compact-payment-item" data-aos="fade-in" data-aos-delay="200">
-              <img src="assets/img/iconosMetodoPago/iconoMetodoPagoMastercard.png" alt="Mastercard">
+              <img src="{{asset('assets/images/iconosMetodoPago/iconoMetodoPagoMastercard.png')}}" alt="Mastercard">
             </div>
 
             <div class="compact-payment-item" data-aos="fade-in" data-aos-delay="250">
-              <img src="assets/img/iconosMetodoPago/iconoMetodoPagoPagoMovil.png" alt="Pago Móvil">
+              <img src="{{asset('assets/images/iconosMetodoPago/iconoMetodoPagoPagoMovil.png')}}" alt="Pago Móvil">
             </div>
 
             <div class="compact-payment-item" data-aos="fade-in" data-aos-delay="300">
-              <img src="assets/img/iconosMetodoPago/iconoMetodoPagoVisa.png" alt="Visa">
+              <img src="{{asset('assets/images/iconosMetodoPago/iconoMetodoPagoVisa.png')}}" alt="Visa">
             </div>
 
             <div class="compact-payment-item" data-aos="fade-in" data-aos-delay="350">
-              <img src="assets/img/iconosMetodoPago/iconoMetodoPagoZelle.png" alt="Zelle">
+              <img src="{{asset('assets/images/iconosMetodoPago/iconoMetodoPagoZelle.png')}}" alt="Zelle">
             </div>
 
             <div class="compact-payment-item" data-aos="fade-in" data-aos-delay="400">
-              <img src="assets/img/iconosMetodoPago/iconoMetodoPagoBinance.png" alt="Binance">
+              <img src="{{asset('assets/images/iconosMetodoPago/iconoMetodoPagoBinance.png')}}" alt="Binance">
             </div>
           </div>
 
@@ -503,8 +503,8 @@
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Nuestros Servicios</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="servicioTallerSuperPanteonUno.html"> Taller: Super Panteón 1</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="servicioTallerSuperShaya.html"> Taller: Super Shaya</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{Route('ServicioTallerSuperPanteonUno.index')}}"> Taller: Super Panteón 1</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{Route('ServicioTallerSuperShaya.index')}}"> Taller: Super Shaya</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="https://wa.me/584242797050"> Servicio de Delivery</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="https://wa.me/584242797050"> Servicio de Envios Nacionales</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="https://wa.me/584129139684"> Servicio de Cotización</a></li>
@@ -514,7 +514,7 @@
           <div class="col-lg-4 col-md-12 footer-newsletter">
             <h4>Nuesto <span class="resaltar">SUPER</span> Logo Empresarial</h4>
             <p>Visitanos y cotiza en cada una de nuestras tiendas especializadas en repuestos Multimarcas, ubicadas en toda Caracas, estamos a tu servicio!</p>
-            <img src="assets/img/pruebaLogo.png" alt="Logo Corporación SUPER Repuestos" class="img-fluid">
+            <img src="{{asset('assets/images/pruebaLogo.png')}}" alt="Logo Corporación SUPER Repuestos" class="img-fluid">
           </div>
 
         </div>
@@ -546,17 +546,17 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="{{asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/php-email-form/validate.js')}}"></script>
+  <script src="{{asset('assets/vendor/aos/aos.js')}}"></script>
+  <script src="{{asset('assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/imagesloaded/imagesloaded.pkgd.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/purecounter/purecounter_vanilla.js')}}"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{{asset('assets/js/main.js')}}"></script>
 
 </body>
 
