@@ -10,8 +10,8 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/logoCorporacionPestanas.ico" rel="Icono Corporación Super Repuestos">
-  <link href="assets/img/logoCorporacionPestanas.ico" rel="Icono Corporación Super Repuestos">
+  <link href="{{asset('assets/img/logoCorporacionPestanas.ico')}}" rel="Icono Corporación Super Repuestos">
+  <link href="{{asset('assets/img/logoCorporacionPestanas.ico')}}" rel="Icono Corporación Super Repuestos">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -24,14 +24,14 @@
   <script src="https://kit.fontawesome.com/f92a465687.js" crossorigin="anonymous"></script>
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="{{asset('assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{asset('assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{asset('assets/vendor/aos/aos.css')}}" rel="stylesheet">
+  <link href="{{asset('assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+  <link href="{{asset('assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="{{asset('assets/css/main.css')}}" rel="stylesheet" type="text/css" />
 
   <!-- =======================================================
   * Template Name: Gp
@@ -47,9 +47,9 @@
   <header id="header" class="header d-flex align-items-center position-relative">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+      <a href="{{ route('home') }}" class="logo d-flex align-items-center me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/pruebaLogo.png" alt="logoCorporacionSuper">
+        <img src="{{asset('assets/images/pruebaLogo.png')}}" alt="logoCorporacionSuper">
         <!-- <h1 class="sitename">Corporación SUPER</h1> -->
         <!-- <span>.</span> -->
       </a>
@@ -92,7 +92,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="index.html#about">¡Enterate!</a>
+      <a class="btn-getstarted" href="{{ route('home') }}#about">¡Enterate!</a>
 
     </div>
   </header>
@@ -102,7 +102,7 @@
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
       <div class="heading heading-con-imagen">
-        <img src="assets/img/imagenesTiendas/imagenTiendaPanteonUno/imagenFondoPanteon.jpg" alt="Flyer Servicio de Taller Super Panteón 1" class="imagen-hero">
+        <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonUno/imagenFondoPanteon.jpg')}}" alt="Flyer Servicio de Taller Super Panteón 1" class="imagen-hero">
         <div class="contenido-heading text-center">
           <div class="container">
             <div class="row d-flex justify-content-center">
@@ -120,7 +120,7 @@
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a href="index.html">Inicio</a></li>
+            <li><a href="{{ route('home') }}">Inicio</a></li>
             <li class="current">Taller de Servicio: Super Panteón 1</li>
           </ol>
         </div>
@@ -156,11 +156,11 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/imagenesTiendas/imagenTiendaPanteonUno/imagenTiendaPanteonUno4.jpeg" alt="Imagen Servicio de Taller Super Panteón 1">
+                  <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonUno/imagenTiendaPanteonUno4.jpeg')}}" alt="Imagen Servicio de Taller Super Panteón 1">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/imagenesTiendas/imagenTiendaPanteonUno/imagenTiendaPanteonUno2.jpeg" alt="Imagen Servicio de Taller Super Panteón 2">
+                  <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonUno/imagenTiendaPanteonUno2.jpeg')}}" alt="Imagen Servicio de Taller Super Panteón 2">
                 </div>
 
               </div>
@@ -217,7 +217,7 @@
       <!-- Compact Payment Methods Section -->
       <section id="payment-methods" class="compact-payment-methods section dark-background">
 
-        <img src="assets/img/iconosMetodoPago/imagenFondoMetodoPago.jpg" class="payment-methods-bg" alt="Fondo de métodos de pago">
+        <img src="{{asset('assets/images/iconosMetodoPago/imagenFondoMetodoPago.jpg')}}" class="payment-methods-bg" alt="Fondo de métodos de pago">
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -228,27 +228,27 @@
 
           <div class="compact-payment-grid">
             <div class="compact-payment-item" data-aos="fade-in" data-aos-delay="150">
-              <img src="assets/img/iconosMetodoPago/iconoMetodoPagoMaestro.png" alt="Maestro">
+              <img src="{{asset('assets/images/iconosMetodoPago/iconoMetodoPagoMaestro.png')}}" alt="Maestro">
             </div>
 
             <div class="compact-payment-item" data-aos="fade-in" data-aos-delay="200">
-              <img src="assets/img/iconosMetodoPago/iconoMetodoPagoMastercard.png" alt="Mastercard">
+              <img src="{{asset('assets/images/iconosMetodoPago/iconoMetodoPagoMastercard.png')}}" alt="Mastercard">
             </div>
 
             <div class="compact-payment-item" data-aos="fade-in" data-aos-delay="250">
-              <img src="assets/img/iconosMetodoPago/iconoMetodoPagoPagoMovil.png" alt="Pago Móvil">
+              <img src="{{asset('assets/images/iconosMetodoPago/iconoMetodoPagoPagoMovil.png')}}" alt="Pago Móvil">
             </div>
 
             <div class="compact-payment-item" data-aos="fade-in" data-aos-delay="300">
-              <img src="assets/img/iconosMetodoPago/iconoMetodoPagoVisa.png" alt="Visa">
+              <img src="{{asset('assets/images/iconosMetodoPago/iconoMetodoPagoVisa.png')}}" alt="Visa">
             </div>
 
             <div class="compact-payment-item" data-aos="fade-in" data-aos-delay="350">
-              <img src="assets/img/iconosMetodoPago/iconoMetodoPagoZelle.png" alt="Zelle">
+              <img src="{{asset('assets/images/iconosMetodoPago/iconoMetodoPagoZelle.png')}}" alt="Zelle">
             </div>
 
             <div class="compact-payment-item" data-aos="fade-in" data-aos-delay="400">
-              <img src="assets/img/iconosMetodoPago/iconoMetodoPagoBinance.png" alt="Binance">
+              <img src="{{asset('assets/images/iconosMetodoPago/iconoMetodoPagoBinance.png')}}" alt="Binance">
             </div>
           </div>
 
@@ -291,7 +291,7 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="{{ route('home') }}" class="logo d-flex align-items-center">
               <span class="sitename">Corporación <strong>SUPER</strong></span>
             </a>
             <div class="footer-contact pt-3">
@@ -311,19 +311,19 @@
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Nuestros Links</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#hero"> Inicio</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#about"> Nosotros</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#services"> Servicios</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#portfolio"> Productos</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#contact"> Contacto</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{ route('home') }}#hero"> Inicio</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{ route('home') }}#about"> Nosotros</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{ route('home') }}#services"> Servicios</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{ route('home') }}#portfolio"> Productos</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{ route('home') }}#contact"> Contacto</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Nuestros Servicios</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="servicioTallerSuperPanteonUno.html"> Taller: Super Panteón 1</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="servicioTallerSuperShaya.html"> Taller: Super Shaya</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{Route('ServicioTallerSuperPanteonUno.index')}}"> Taller: Super Panteón 1</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{Route('ServicioTallerSuperShaya.index')}}"> Taller: Super Shaya</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="https://wa.me/584242797050"> Servicio de Delivery</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="https://wa.me/584242797050"> Servicio de Envios Nacionales</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="https://wa.me/584129139684"> Servicio de Cotización</a></li>
@@ -333,7 +333,7 @@
           <div class="col-lg-4 col-md-12 footer-newsletter">
             <h4>Nuesto <span class="resaltar">SUPER</span> Logo Empresarial</h4>
             <p>Visitanos y cotiza en cada una de nuestras tiendas especializadas en repuestos Multimarcas, ubicadas en toda Caracas, estamos a tu servicio!</p>
-            <img src="assets/img/pruebaLogo.png" alt="Logo Corporación SUPER Repuestos" class="img-fluid">
+            <img src="{{asset('assets/images/pruebaLogo.png')}}" alt="Logo Corporación SUPER Repuestos" class="img-fluid">
           </div>
 
         </div>
@@ -365,17 +365,17 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="{{asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/php-email-form/validate.js')}}"></script>
+  <script src="{{asset('assets/vendor/aos/aos.js')}}"></script>
+  <script src="{{asset('assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/imagesloaded/imagesloaded.pkgd.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/purecounter/purecounter_vanilla.js')}}"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{{asset('assets/js/main.js')}}"></script>
 
 </body>
 

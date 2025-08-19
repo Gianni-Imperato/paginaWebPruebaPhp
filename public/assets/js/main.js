@@ -218,3 +218,29 @@ setTimeout(function() {
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+
+// Control de videos en Swiper (No se reproducen automáticamente)
+  document.addEventListener("DOMContentLoaded", function () {
+    const swiper = document.querySelector(".init-swiper").swiper;
+    const videos = document.querySelectorAll(".swiper-slide video");
+
+    function pauseAllVideos() {
+      videos.forEach(video => {
+        video.pause();
+        video.currentTime = 0;
+      });
+    }
+
+    swiper.on('slideChange', function () {
+      pauseAllVideos();
+
+      const activeSlide = swiper.slides[swiper.activeIndex];
+      const activeVideo = activeSlide.querySelector('video');
+      if (activeVideo) {
+        activeVideo.play();
+      }
+    });
+
+    pauseAllVideos(); // Pausar todos al inicio
+  });

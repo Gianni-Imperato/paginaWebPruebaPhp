@@ -51,11 +51,13 @@ Route::get('/', function () {
     //return view('auth/login');
 
     return view('welcome');
+    
+})->name('home');
 
     //return view('home');
 
 
-});
+//});
 
 
 Route::get('SuperCasanova', [CasanovaController::class, 'index'])->name('SuperCasanova.index'); //ruta para supercasanova

@@ -46,7 +46,7 @@
   <header id="header" class="header d-flex align-items-center position-relative">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+      <a href="{{ route('home') }}" class="logo d-flex align-items-center me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="{{asset('assets/images/pruebaLogo.png')}}" alt="logoCorporacionSuper">
         <!-- <h1 class="sitename">Corporación SUPER</h1> -->

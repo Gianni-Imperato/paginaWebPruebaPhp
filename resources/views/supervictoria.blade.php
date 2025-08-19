@@ -47,7 +47,7 @@
   <header id="header" class="header d-flex align-items-center position-relative">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+      <a href="{{ route('home') }}" class="logo d-flex align-items-center me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="{{asset('assets/images/pruebaLogo.png')}}" alt="logoCorporacionSuper">
         <!-- <h1 class="sitename">Corporación SUPER</h1> -->
@@ -92,7 +92,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="index.html#about">¡Enterate!</a>
+      <a class="btn-getstarted" href="{{ route('home') }}#about">¡Enterate!</a>
 
     </div>
   </header>
@@ -118,7 +118,7 @@
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a href="index.html">Inicio</a></li>
+            <li><a href="{{ route('home') }}">Inicio</a></li>
             <li class="current">Super Victoria</li>
           </ol>
         </div>
@@ -482,7 +482,7 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="{{ route('home') }}" class="logo d-flex align-items-center">
               <span class="sitename">Corporación <strong>SUPER</strong></span>
             </a>
             <div class="footer-contact pt-3">
@@ -502,11 +502,11 @@
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Nuestros Links</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#hero"> Inicio</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#about"> Nosotros</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#services"> Servicios</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#portfolio"> Productos</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#contact"> Contacto</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{ route('home') }}#hero"> Inicio</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{ route('home') }}#about"> Nosotros</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{ route('home') }}#services"> Servicios</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{ route('home') }}#portfolio"> Productos</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{ route('home') }}#contact"> Contacto</a></li>
             </ul>
           </div>
 

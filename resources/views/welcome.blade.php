@@ -46,7 +46,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="" class="logo d-flex align-items-center me-auto me-lg-0">
+      <a href="{{ route('home') }}" class="logo d-flex align-items-center me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="{{asset('assets/images/pruebaLogo.png')}}" alt="Logo Corporacion Super Repuestos">
         <!-- <h1 class="sitename">Corporación <strong>SUPER</strong></h1> -->
@@ -353,7 +353,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
               <!-- Fondo de la imagen .png para futuros cambios -->
-              <div class="service-bg" style="background-image: url('assets/img/servicioTalleres.jpg');">
+              <div class="service-bg" style="background-image: url('assets/images/servicioTalleres.jpg');">
               </div>
               <div class="icon">
                 <i class="bi bi-activity"></i>
@@ -371,7 +371,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
               <!-- Fondo de la imagen .png para futuros cambios-->
-              <div class="service-bg" style="background-image: url('assets/img/servicioTalleres2.jpeg');">
+              <div class="service-bg" style="background-image: url('assets/images/servicioTalleres2.jpeg');">
               </div>
               <div class="icon">
                 <i class="bi bi-activity"></i>
@@ -389,7 +389,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
               <!-- Fondo de la imagen .png para futuros cambios-->
-              <div class="service-bg" style="background-image: url('assets/img/servicioDelivery.jpg');">
+              <div class="service-bg" style="background-image: url('assets/images/servicioDelivery.jpg');">
               </div>
               <div class="icon">
                 <i class="bi bi-truck"></i>
@@ -475,7 +475,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
               <!-- Fondo de la imagen .png para futuros cambios-->
-              <div class="service-bg" style="background-image: url('assets/img/servicioEnviosNacionales.png');">
+              <div class="service-bg" style="background-image: url('assets/images/servicioEnviosNacionales.png');">
               </div>
               <div class="icon">
                 <i class="bi bi-airplane"></i>
@@ -493,7 +493,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item position-relative">
               <!-- Fondo de la imagen .png para futuros cambios-->
-              <div class="service-bg" style="background-image: url('assets/img/servicioCotizacion');">
+              <div class="service-bg" style="background-image: url('assets/images/servicioCotizacion');">
               </div>
               <div class="icon">
                 <i class="bi bi-calculator"></i>
@@ -510,7 +510,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item position-relative">
               <!-- Fondo de la imagen .png para futuros cambios-->
-              <div class="service-bg" style="background-image: url('assets/img/servicioComentarioObservacion.jpeg');">
+              <div class="service-bg" style="background-image: url('assets/images/servicioComentarioObservacion.jpeg');">
               </div>
               <div class="icon">
                 <i class="bi bi-chat-square-text"></i>
