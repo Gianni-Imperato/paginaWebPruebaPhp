@@ -1,12 +1,12 @@
 <ul class="metismenu" id="side-menu">
 
-    <li class="menu-title">Menu</li>
+    <li class="menu-title">Menú Principal</li>
 
     <li>
         <a href="{{url('/dashboard')}}">
             <i class="la la-dashboard"></i>
             <span class="nav-second-level"></span>
-            <span> Dashboards</span>
+            <span>Gráficos</span>
         </a>
         <ul>
             <li>
@@ -18,7 +18,7 @@
     <li>
         <a href="javascript: void(0);">
             <i class="la la-cube"></i>
-            <span> Inventario </span>
+            <span> Inventarios </span>
             <span class="menu-arrow"></span>
         </a>
         <ul class="nav-second-level" aria-expanded="false">

@@ -6,12 +6,15 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Servicio de Taller: Super Panteón 1 | Corporación Super Repuestos
   </title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="Corporación Super Repuestos, tu mejor aliado en repuestos multimarca, es una empresa dedicada a la venta de repuestos y accesorios para vehículos, ofreciendo productos de alta calidad y un servicio excepcional.">
+  <meta name="keywords" content="Corporación Super Repuestos, repuestos multimarca, venta de repuestos, accesorios para vehículos, servicio excepcional, calidad en repuestos, repuestos de alta calidad, empresa de repuestos, repuestos y accesorios, vehiculos, automóviles, camionetas, motos, repuestos para autos, repuestos para camionetas, repuestos para motos, accesorios de vehículos, venta de accesorios, servicio al cliente, atención al cliente, repuestos confiables, repuestos duraderos, Jeep, Ford, Chevrolet, Toyota, Nissan, Hyundai, Kia, Volkswagen, Honda, Mitsubishi, Subaru, Mazda, Suzuki, Isuzu, repuestos para Ford, repuestos para Chevrolet, repuestos para Toyota, repuestos para Nissan, repuestos para Hyundai, repuestos para Kia, repuestos para Volkswagen, repuestos para Honda, repuestos para Mitsubishi, repuestos para Subaru, repuestos para Mazda, repuestos para Suzuki, repuestos para Isuzu">
+  <meta name="author" content="Gianni Imperato" />
+  <meta name="copyright" content="Corporación Super Repuestos" />
+  <meta name="robots" content="index"/>
 
   <!-- Favicons -->
-  <link href="{{asset('assets/img/logoCorporacionPestanas.ico')}}" rel="Icono Corporación Super Repuestos">
-  <link href="{{asset('assets/img/logoCorporacionPestanas.ico')}}" rel="Icono Corporación Super Repuestos">
+  <link href="{{asset('assets/images/favicon.ico')}}" rel="Icono Corporación Super Repuestos">
+  <link href="{{asset('assets/images/favicon.ico')}}" rel="Icono Corporación Super Repuestos">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -93,6 +96,37 @@
       </nav>
 
       <a class="btn-getstarted" href="{{ route('home') }}#about">¡Enterate!</a>
+
+
+      <!-- Espacio para incluir el Portal mediante un botón -->
+       @if (Route::has('login'))
+            <nav class="-mx-3 flex flex-1 justify-end">
+                @auth
+                    <a
+                        href="{{ url('/dashboard') }}"
+                        class="rounded-md px-3 py-2 text-white ring-1 ring-transparent transition hover:text-white/70 focus:outline-none focus-visible:ring-[#FF2D20]"
+                    >
+                        Dashboard
+                    </a>
+                @else
+                    <a
+                        href="{{ route('login') }}"
+                        class="rounded-md px-3 py-2 text-white ring-1 ring-transparent transition hover:text-white/70 focus:outline-none focus-visible:ring-[#FF2D20]"
+                    >
+                        Intranet
+                    </a>
+
+                    <!-- @if (Route::has('register'))
+                        <a
+                            href="{{ route('register') }}"
+                            class="rounded-md px-3 py-2 text-white ring-1 ring-transparent transition hover:text-white/70 focus:outline-none focus-visible:ring-[#FF2D20]"
+                        >
+                            Register
+                        </a>
+                    @endif -->
+                @endauth
+            </nav>
+        @endif
 
     </div>
   </header>

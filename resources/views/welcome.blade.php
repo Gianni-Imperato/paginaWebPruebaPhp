@@ -5,15 +5,19 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Corporación Super Repuestos | Al rescate de tu vehiculo</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="Corporación Super Repuestos, tu mejor aliado en repuestos multimarca, es una empresa dedicada a la venta de repuestos y accesorios para vehículos, ofreciendo productos de alta calidad y un servicio excepcional.">
+  <meta name="keywords" content="Corporación Super Repuestos, repuestos multimarca, venta de repuestos, accesorios para vehículos, servicio excepcional, calidad en repuestos, repuestos de alta calidad, empresa de repuestos, repuestos y accesorios, vehiculos, automóviles, camionetas, motos, repuestos para autos, repuestos para camionetas, repuestos para motos, accesorios de vehículos, venta de accesorios, servicio al cliente, atención al cliente, repuestos confiables, repuestos duraderos, Jeep, Ford, Chevrolet, Toyota, Nissan, Hyundai, Kia, Volkswagen, Honda, Mitsubishi, Subaru, Mazda, Suzuki, Isuzu, repuestos para Ford, repuestos para Chevrolet, repuestos para Toyota, repuestos para Nissan, repuestos para Hyundai, repuestos para Kia, repuestos para Volkswagen, repuestos para Honda, repuestos para Mitsubishi, repuestos para Subaru, repuestos para Mazda, repuestos para Suzuki, repuestos para Isuzu">
+  <meta name="author" content="Gianni Imperato" />
+  <meta name="copyright" content="Corporación Super Repuestos" />
+  <meta name="robots" content="index"/>
+
 
   <!-- Font Awesome | Iconos -->
   <script src="https://kit.fontawesome.com/f92a465687.js" crossorigin="anonymous"></script>
 
   <!-- Favicons -->
-  <link href="{{asset('assets/img/logoCorporacionPestanas.ico')}}" rel="Icono Corporación Super Repuestos">
-  <link href="{{asset('assets/img/logoCorporacionPestanas.ico')}}" rel="Icono Corporación Super Repuestos">
+  <link href="{{asset('assets/images/favicon.ico')}}" rel="Icono Corporación Super Repuestos">
+  <link href="{{asset('assets/images/favicon.ico')}}" rel="Icono Corporación Super Repuestos">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -91,7 +95,38 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="index.html#about">¡Enterate!</a>
+      <a class="btn-getstarted" href="#about">¡Enterate!</a>
+      
+
+      <!-- Espacio para incluir el Portal mediante un botón -->
+       @if (Route::has('login'))
+            <nav class="-mx-3 flex flex-1 justify-end">
+                @auth
+                    <a
+                        href="{{ url('/dashboard') }}"
+                        class="rounded-md px-3 py-2 text-white ring-1 ring-transparent transition hover:text-white/70 focus:outline-none focus-visible:ring-[#FF2D20]"
+                    >
+                        Intranet
+                    </a>
+                @else
+                    <a
+                        href="{{ route('login') }}"
+                        class="rounded-md px-3 py-2 text-white ring-1 ring-transparent transition hover:text-white/70 focus:outline-none focus-visible:ring-[#FF2D20]"
+                    >
+                        Intranet
+                    </a>
+
+                    <!-- @if (Route::has('register'))
+                        <a
+                            href="{{ route('register') }}"
+                            class="rounded-md px-3 py-2 text-white ring-1 ring-transparent transition hover:text-white/70 focus:outline-none focus-visible:ring-[#FF2D20]"
+                        >
+                            Register
+                        </a>
+                    @endif -->
+                @endauth
+            </nav>
+        @endif            
 
     </div>
   </header>
@@ -1391,7 +1426,7 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="{{ route('home') }}" class="logo d-flex align-items-center">
               <span class="sitename">Corporación <strong>SUPER</strong></span>
             </a>
             <div class="footer-contact pt-3">
@@ -1471,14 +1506,14 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="{{asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/php-email-form/validate.js')}}"></script>
+  <script src="{{asset('assets/vendor/aos/aos.js')}}"></script>
+  <script src="{{asset('assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/imagesloaded/imagesloaded.pkgd.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/purecounter/purecounter_vanilla.js')}}"></script>
 
   <!-- Main JS File -->
   <script src="{{asset('assets/js/main.js')}}"></script>

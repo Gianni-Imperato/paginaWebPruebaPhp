@@ -2,13 +2,14 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Inntech Cloud</title>
+        <title>Portal Corporativo | Corporación Super Repuestos</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        
         <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="shortcut icon" href="{{asset('assets/images/favicon.ico')}}">
 
         <!-- App css -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -92,9 +93,9 @@
 
                     <!-- LOGO -->
                     <div class="logo-box">
-                        <a href="index.html" class="logo text-center">
+                        <a href="{{ route('home') }}" class="logo text-center">
                             <span class="logo-lg">
-                                <img src="assets/images/logo-super.png" alt="" height="36">
+                                <img src="{{asset('assets/images/pruebaLogo.png')}}" alt="Logo Corporacion Super Repuestos" height="36">
                                 <!-- <span class="logo-lg-text-light">Xeria</span> -->
                             </span>
                         </a>
@@ -113,7 +114,7 @@
                     <li class="dropdown dropdown-mega d-none d-lg-block">
                         <a class="nav-link dropdown-toggle waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                             <h4 style="padding: 10px; color:#6c757d">
-                                <span>Dashboard</span>
+                                <span>Gráficos</span>
                             </h4>
                         </a>
                     </li>
@@ -148,7 +149,9 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-md-6">
-                                    2024 &copy; Corporación Super 
+                                    <p>© <span>2025 Copyright</span> <strong class="px-1 sitename">Corporación <strong>SUPER</strong> Repuestos</strong>
+                                        <span>All Rights Reserved</span>
+                                    </p> 
                                 </div>
                             </div>
                         </div>
