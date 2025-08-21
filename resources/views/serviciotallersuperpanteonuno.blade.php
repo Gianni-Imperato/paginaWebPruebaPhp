@@ -217,7 +217,7 @@
             </div>
             
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>¡Comunícate con nosotros!</h2>
+              <h2>¡Cotiza con nosotros ahora!</h2>
               <div class="row">
                 <!-- Columna 1 -->
                 <div class="col-md-4">

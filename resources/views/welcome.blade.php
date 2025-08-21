@@ -574,12 +574,12 @@
         <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-10">
             <div class="text-center">
-              <h3>Servicio <span class="resaltar">SUPER</span> en Línea</h3>
+              <h3>Cotizar <span class="resaltar">SUPER</span> en Línea</h3>
               <p>¿Estás buscando un repuesto para tu vehiculo o camión? Comunicate con nuestros SUPER asesores y
                 solicita asistencia. <br>Ubicamos el repuesto que necesitas en nuestras tiendas y almacenes.
-                <br>¡Estamos para ayudarte!
+                <br>¡Estamos para ayudarte!<br><span class="resaltar2">¡Cotiza Ahora!</span>
               </p>
-              <a class="cta-btn" href="https://wa.me/584129139684" target="_blank">¡Contactanos!</a>
+              <a class="cta-btn" href="https://wa.me/584129139684" target="_blank"><span class="resaltar2">¡COTIZAR!</span></a>
             </div>
           </div>
         </div>

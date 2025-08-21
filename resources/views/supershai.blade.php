@@ -187,7 +187,7 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaShai/imagenTiendaShai1.png')}}" alt="Tienda Super Shai 1">
+                  <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaShai/imagenTiendaShai5.png')}}" alt="Tienda Super Shai 1">
                 </div>
 
                 <div class="swiper-slide">
@@ -195,11 +195,11 @@
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaShai/imagenTiendaShai3.png')}}" alt="Tienda Super Shai 3">
+                  <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaShai/imagenTiendaShai1.png')}}" alt="Tienda Super Shai 3">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaShai/imagenTiendaShai4.jpeg')}}" alt="Tienda Super Shai 4">
+                  <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaShai/imagenTiendaShai3.png')}}" alt="Tienda Super Shai 4">
                 </div>
 
               </div>
@@ -221,7 +221,7 @@
             </ul>
             </div>
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>¡Comunícate con nosotros!</h2>
+              <h2>¡Cotiza con nosotros ahora!</h2>
               <div class="row">
                 <!-- Columna 1 -->
                 <div class="col-md-4">
