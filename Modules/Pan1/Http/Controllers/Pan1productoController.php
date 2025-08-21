@@ -15,28 +15,14 @@ class Pan1productoController extends Controller
 {
     public function index()
     {
-
-        if (request('buscarpor')){
-            $search = request('buscarpor');
-            $datos = pan1producto::buscar($search)->Paginate(10)
-                ->withQueryString();
+        if (request('filtroa')){
+            $searcha = request('filtroa');
+            $searchb = request('filtrob');
+            $datos = pan1producto::buscar($searcha)->buscar($searchb)->Paginate(50)->withQueryString();
         }else{
-            $datos = pan1producto::orderBy('id', 'desc')->Paginate(10);
+            $datos = pan1producto::orderBy('id', 'desc')->Paginate(50);
         }
-        /*
-        if (request('buscarpor')){
-            $search = request('buscarpor');
-            $datos = pan1producto::where('des_arti', 'like', "%$search%")
-                ->orWhere('cod_alter', 'like', "%$search%")
-                ->Paginate(5)
-                ->withQueryString();
-        }else{
-            $datos = pan1producto::orderBy('id', 'desc')->Paginate(5);
-        }
-        */
         return view('pan1::producto.index',compact('datos'));
-        //$datos['datos']=pan1producto::paginate(5);
-        //return view('shai::producto.index', $datos);
 
     }
 

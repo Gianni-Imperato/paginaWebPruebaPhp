@@ -13,15 +13,15 @@ class ShayproductoController extends Controller
 {
     public function index()
     {
-
-        if (request('buscarpor')){
-            $search = request('buscarpor');
-            $datos = shayproducto::buscar($search)->Paginate(5)
-                ->withQueryString();
+        if (request('filtroa')){
+            $searcha = request('filtroa');
+            $searchb = request('filtrob');
+            $datos = shayproducto::buscar($searcha)->buscar($searchb)->Paginate(50)->withQueryString();
         }else{
-            $datos = shayproducto::orderBy('id', 'desc')->Paginate(5);
+            $datos = shayproducto::orderBy('id', 'desc')->Paginate(50);
         }
         return view('shaya::producto.index',compact('datos'));
+
     }
 
     public function store(Request $request)

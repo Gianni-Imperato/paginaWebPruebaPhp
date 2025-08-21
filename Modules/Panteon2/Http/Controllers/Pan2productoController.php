@@ -13,12 +13,12 @@ class Pan2productoController extends Controller
 {
     public function index()
     {
-        if (request('buscarpor')){
-            $search = request('buscarpor');
-            $datos = pan2producto::buscar($search)->Paginate(10)
-                ->withQueryString();
+        if (request('filtroa')){
+            $searcha = request('filtroa');
+            $searchb = request('filtrob');
+            $datos = pan2producto::buscar($searcha)->buscar($searchb)->Paginate(50)->withQueryString();
         }else{
-            $datos = pan2producto::orderBy('id', 'desc')->Paginate(10);
+            $datos = pan2producto::orderBy('id', 'desc')->Paginate(50);
         }
         return view('panteon2::producto.index',compact('datos'));
 

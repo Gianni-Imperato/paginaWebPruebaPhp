@@ -13,12 +13,12 @@ class EstrproductoController extends Controller
 {
     public function index()
     {
-        if (request('buscarpor')){
-            $search = request('buscarpor');
-            $datos = estrproducto::buscar($search)->Paginate(10)
-                ->withQueryString();
+        if (request('filtroa')){
+            $searcha = request('filtroa');
+            $searchb = request('filtrob');
+            $datos = estrproducto::buscar($searcha)->buscar($searchb)->Paginate(50)->withQueryString();
         }else{
-            $datos = estrproducto::orderBy('id', 'desc')->Paginate(10);
+            $datos = estrproducto::orderBy('id', 'desc')->Paginate(50);
         }
         return view('estrella::producto.index',compact('datos'));
 

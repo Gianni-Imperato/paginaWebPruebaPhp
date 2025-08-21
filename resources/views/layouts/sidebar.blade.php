@@ -23,25 +23,25 @@
         </a>
         <ul class="nav-second-level" aria-expanded="false">
             <li>
-                <a href="{{route('pan1producto.index')}}">Super Panteon I</a>
-            </li>
-            <li>
-                <a href="{{route('pan2producto.index')}}">Super Panteon II</a>
+                <a href="{{route('casaproducto.index')}}">Super Casanova</a>
             </li>
             <li>
                 <a href="{{route('estrproducto.index')}}">Super Estrella</a>
             </li>
             <li>
-                <a href="{{route('casaproducto.index')}}">Super Casanova</a>
+                <a href="{{route('juniproducto.index')}}">Super Junin</a>
             </li>
             <li>
-                <a href="{{route('victproducto.index')}}">Super Victoria</a>
+                <a href="{{route('pan1producto.index')}}">Super Panteon Uno</a>
+            </li>
+            <li>
+                <a href="{{route('pan2producto.index')}}">Super Panteon Dos</a>
+            </li>
+            <li>
+                <a href="{{route('s121producto.index')}}">Super Repuestos 1212</a>
             </li>
             <li>
                 <a href="{{route('shaiproducto.index')}}">Super Shai</a>
-            </li>
-            <li>
-                <a href="{{route('juniproducto.index')}}">Super Junin</a>
             </li>
             <li>
                 <a href="{{route('shayproducto.index')}}">Super Shaya</a>
@@ -49,8 +49,12 @@
             <li>
                 <a href="{{route('suspproducto.index')}}">Super Suspensión</a>
             </li>
+            <li>
+                <a href="{{route('victproducto.index')}}">Super Victoria</a>
+            </li>
         </ul>
     </li>
+
 
     <li>
         <a href="javascript: void(0);">
@@ -60,25 +64,25 @@
         </a>
         <ul class="nav-second-level" aria-expanded="false">
             <li>
-                <a href="{{route('pan1siped.index')}}">Super Panteon I</a>
-            </li>
-            <li>
-                <a href="{{route('pan2siped.index')}}">Super Panteon II</a>
+                <a href="{{route('casasiped.index')}}">Super Casanova</a>
             </li>
             <li>
                 <a href="{{route('estrsiped.index')}}">Super Estrella</a>
             </li>
             <li>
-                <a href="{{route('casasiped.index')}}">Super Casanova</a>
+                <a href="{{route('junisiped.index')}}">Super Junin</a>
             </li>
             <li>
-                <a href="{{route('victsiped.index')}}">Super Victoria</a>
+                <a href="{{route('pan1siped.index')}}">Super Panteon Uno</a>
+            </li>
+            <li>
+                <a href="{{route('pan2siped.index')}}">Super Panteon Dos</a>
+            </li>
+            <li>
+                <a href="{{route('s121siped.index')}}">Super Repuestos 1212</a>
             </li>
             <li>
                 <a href="{{route('shaisiped.index')}}">Super Shai</a>
-            </li>
-            <li>
-                <a href="{{route('junisiped.index')}}">Super Junin</a>
             </li>
             <li>
                 <a href="{{route('shaysiped.index')}}">Super Shaya</a>
@@ -86,8 +90,12 @@
             <li>
                 <a href="{{route('suspsiped.index')}}">Super Suspensión</a>
             </li>
+            <li>
+                <a href="{{route('victsiped.index')}}">Super Victoria</a>
+            </li>
         </ul>
     </li>
+
 
     <li>
         <a href="javascript: void(0);">
@@ -97,25 +105,25 @@
         </a>
         <ul class="nav-second-level" aria-expanded="false">
             <li>
-                <a href="{{route('pan1vencom.index')}}">Super Panteon I</a>
-            </li>
-            <li>
-                <a href="{{route('pan2vencom.index')}}">Super Panteon II</a>
+                <a href="{{route('casavencom.index')}}">Super Casanova</a>
             </li>
             <li>
                 <a href="{{route('estrvencom.index')}}">Super Estrella</a>
             </li>
             <li>
-                <a href="{{route('casavencom.index')}}">Super Casanova</a>
+                <a href="{{route('junivencom.index')}}">Super Junin</a>
             </li>
             <li>
-                <a href="{{route('victvencom.index')}}">Super Victoria</a>
+                <a href="{{route('pan1vencom.index')}}">Super Panteon Uno</a>
+            </li>
+            <li>
+                <a href="{{route('pan2vencom.index')}}">Super Panteon Dos</a>
+            </li>
+            <li>
+                <a href="{{route('s121vencom.index')}}">Super Repuestos 1212</a>
             </li>
             <li>
                 <a href="{{route('shaivencom.index')}}">Super Shai</a>
-            </li>
-            <li>
-                <a href="{{route('junivencom.index')}}">Super Junin</a>
             </li>
             <li>
                 <a href="{{route('shayvencom.index')}}">Super Shaya</a>
@@ -123,8 +131,12 @@
             <li>
                 <a href="{{route('suspvencom.index')}}">Super Suspensión</a>
             </li>
+            <li>
+                <a href="{{route('victvencom.index')}}">Super Victoria</a>
+            </li>
         </ul>
     </li>
+
 
     <li>
         <a href="javascript: void(0);">
@@ -134,32 +146,34 @@
         </a>
         <ul class="nav-second-level" aria-expanded="false">
             <li>
-                <a href="{{route('pan1pagos.index')}}">Super Panteon I</a>
-            </li>
-            <li>
-                <a href="{{route('pan2pagos.index')}}">Super Panteon II</a>
+                <a href="{{route('casapagos.index')}}">Super Casanova</a>
             </li>
             <li>
                 <a href="{{route('estrpagos.index')}}">Super Estrella</a>
             </li>
-
             <li>
-                <a href="{{route('casapagos.index')}}">Super Casanova</a>
+                <a href="{{route('junipagos.index')}}">Super Junin</a>
             </li>
             <li>
-                <a href="{{route('victpagos.index')}}">Super Victoria</a>
+                <a href="{{route('pan1pagos.index')}}">Super Panteon Uno</a>
+            </li>
+            <li>
+                <a href="{{route('pan2pagos.index')}}">Super Panteon Dos</a>
+            </li>
+            <li>
+                <a href="{{route('s121pagos.index')}}">Super Repuestos 1212</a>
             </li>
             <li>
                 <a href="{{route('shaipagos.index')}}">Super Shai</a>
-            </li>
-            <li>
-                <a href="{{route('junipagos.index')}}">Super Junin</a>
             </li>
             <li>
                 <a href="{{route('shaypagos.index')}}">Super Shaya</a>
             </li>
             <li>
                 <a href="{{route('susppagos.index')}}">Super Suspensión</a>
+            </li>
+            <li>
+                <a href="{{route('victpagos.index')}}">Super Victoria</a>
             </li>
         </ul>
     </li>

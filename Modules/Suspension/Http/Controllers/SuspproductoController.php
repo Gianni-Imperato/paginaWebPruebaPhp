@@ -13,12 +13,12 @@ class SuspproductoController extends Controller
 {
     public function index()
     {
-        if (request('buscarpor')){
-            $search = request('buscarpor');
-            $datos = suspproducto::buscar($search)->Paginate(10)
-                ->withQueryString();
+        if (request('filtroa')){
+            $searcha = request('filtroa');
+            $searchb = request('filtrob');
+            $datos = suspproducto::buscar($searcha)->buscar($searchb)->Paginate(50)->withQueryString();
         }else{
-            $datos = suspproducto::orderBy('id', 'desc')->Paginate(10);
+            $datos = suspproducto::orderBy('id', 'desc')->Paginate(50);
         }
         return view('suspension::producto.index',compact('datos'));
 

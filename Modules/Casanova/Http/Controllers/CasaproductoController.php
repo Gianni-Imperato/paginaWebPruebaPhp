@@ -13,13 +13,25 @@ class CasaproductoController extends Controller
 {
     public function index()
     {
-        if (request('buscarpor')){
-            $search = request('buscarpor');
-            $datos = casaproducto::buscar($search)->Paginate(30)
-                ->withQueryString();
+
+
+        //print_r(request('filtroa'));
+        //die();
+
+        if (request('filtroa')){
+            $searcha = request('filtroa');
+            $searchb = request('filtrob');
+            $datos = casaproducto::buscar($searcha)->buscar($searchb)->Paginate(50)->withQueryString();
+
         }else{
-            $datos = casaproducto::orderBy('id', 'desc')->Paginate(30);
+            $datos = casaproducto::orderBy('id', 'desc')->Paginate(50);
         }
+
+
+        //print_r($datos);
+        //die();
+
+
         return view('casanova::producto.index',compact('datos'));
 
     }

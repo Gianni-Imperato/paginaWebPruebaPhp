@@ -15,12 +15,12 @@ class VictproductoController extends Controller
 {
     public function index()
     {
-        if (request('buscarpor')){
-            $search = request('buscarpor');
-            $datos = victproducto::buscar($search)->Paginate(30)
-                ->withQueryString();
+        if (request('filtroa')){
+            $searcha = request('filtroa');
+            $searchb = request('filtrob');
+            $datos = victproducto::buscar($searcha)->buscar($searchb)->Paginate(50)->withQueryString();
         }else{
-            $datos = victproducto::orderBy('id', 'desc')->Paginate(30);
+            $datos = victproducto::orderBy('id', 'desc')->Paginate(50);
         }
         return view('victoria::producto.index',compact('datos'));
 

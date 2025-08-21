@@ -112,7 +112,7 @@
                     </ul>
 
                     <li class="dropdown dropdown-mega d-none d-lg-block">
-                        <a class="nav-link dropdown-toggle waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle waves-effect" data-toggle="dropdown" href="{{url('/dashboard')}}" role="button" aria-haspopup="false" aria-expanded="false">
                             <h4 style="padding: 10px; color:#6c757d">
                                 <span>Gráficos</span>
                             </h4>

@@ -1209,7 +1209,7 @@
             <div class="swiper-slide">
               <div class="store-item">
                 <div class="store-img-container">
-                  <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaShai/imagenTiendaShai4.jpeg')}}" class="store-img"
+                  <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaShai/imagenTiendaShai5.png')}}" class="store-img"
                     alt="Fachada Tienda Repuestos Super Shai">
                   <div class="store-overlay">
                     <h3>Super Shai</h3>

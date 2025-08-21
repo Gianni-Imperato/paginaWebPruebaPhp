@@ -15,7 +15,9 @@
       <div>
         <nav class="navbar navbar-light bg-light">
           <form class="form-inline">
-            <input name="buscarpor" class="form-control mr-sm-2" type="search" placeholder="buscar" aria-label="Search" :value="request(buscarpor)">
+            <input name="filtroa" class="form-control mr-sm-2" type="search" placeholder="filtro1" aria-label="Search" :value="request(filtroa)">
+            <br>
+            <input name="filtrob" class="form-control mr-sm-2" type="search" placeholder="filtro2" aria-label="Search" :value="request(filtroab)">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
           </form>
         </nav>
@@ -62,7 +64,7 @@
                   <td>{{ $producto->pvp_arti }}</td>
                   <td>{{ $producto->can_exis }}</td>
                   <td>{{ $producto->coso }}</td>
-                  <td>{{ $producto->cod_suc }}</td>
+                  <td>Super Panteón Uno</td>
                   <td>{{ $producto->fec_ing }}</td>
                   <td>
                     <a href="{{url('/pan1producto/'.$producto->id.'/edit')}}" class="btn waves-effect waves-light btn-xs btn-info">Edit</a> 

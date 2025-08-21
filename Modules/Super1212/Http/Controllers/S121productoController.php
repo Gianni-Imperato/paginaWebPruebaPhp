@@ -13,15 +13,15 @@ class S121productoController extends Controller
 {
     public function index()
     {
-
-        if (request('buscarpor')){
-            $search = request('buscarpor');
-            $datos = s121producto::buscar($search)->Paginate(5)
-                ->withQueryString();
+        if (request('filtroa')){
+            $searcha = request('filtroa');
+            $searchb = request('filtrob');
+            $datos = s121producto::buscar($searcha)->buscar($searchb)->Paginate(50)->withQueryString();
         }else{
-            $datos = s121producto::orderBy('id', 'desc')->Paginate(5);
+            $datos = s121producto::orderBy('id', 'desc')->Paginate(50);
         }
         return view('super1212::producto.index',compact('datos'));
+
     }
 
     public function store(Request $request)

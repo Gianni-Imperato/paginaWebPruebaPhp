@@ -13,15 +13,15 @@ class ShaiproductoController extends Controller
 {
     public function index()
     {
-
-        if (request('buscarpor')){
-            $search = request('buscarpor');
-            $datos = shaiproducto::buscar($search)->Paginate(5)
-                ->withQueryString();
+        if (request('filtroa')){
+            $searcha = request('filtroa');
+            $searchb = request('filtrob');
+            $datos = shaiproducto::buscar($searcha)->buscar($searchb)->Paginate(50)->withQueryString();
         }else{
-            $datos = shaiproducto::orderBy('id', 'desc')->Paginate(5);
+            $datos = shaiproducto::orderBy('id', 'desc')->Paginate(50);
         }
         return view('shai::producto.index',compact('datos'));
+
     }
 
     public function store(Request $request)
