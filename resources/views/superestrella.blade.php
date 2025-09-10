@@ -58,12 +58,12 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Inicio<br></a></li>
-          <li><a href="#about">Nosotros</a></li>
-          <li><a href="#services">Servicios</a></li>
+          <li><a href="{{ route('home') }}#hero" class="active">Inicio<br></a></li>
+          <li><a href="{{ route('home') }}#about">Nosotros</a></li>
+          <li><a href="{{ route('home') }}#services">Servicios</a></li>
           <li><a href="#portfolio">Productos</a></li>
           <li><a href="#videos">Promociones</a></li>
-          <li class="dropdown"><a href="#stores"><span>Cotizar</span> <i
+          <li class="dropdown"><a href="{{ route('home') }}#stores"><span>Cotizar</span> <i
                 class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="{{Route('SuperCasanova.index')}}">Super Casanova</a></li>
@@ -227,13 +227,13 @@
                 <div class="col-md-4">
                   <ul class="list-unstyled contact-list">
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584126868553"
-                        target="_blank">Yorliana</a></li>
+                        target="_blank">Asesor 1</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584241931293"
-                        target="_blank">Ronny</a></li>
+                        target="_blank">Asesor 2</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584121478986"
-                        target="_blank">Gabriel</a></li>
+                        target="_blank">Asesor 3</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584241931238"
-                        target="_blank">Engelbert</a></li>
+                        target="_blank">Asesor 4</a></li>
                   </ul>
                 </div>
 
@@ -267,11 +267,11 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella3.jpeg')}}" class="img-fluid" alt="">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella4.jpeg')}}" class="img-fluid" alt="Somos especialistas en Fiat y Renault">
               <div class="portfolio-info">
-                <h4>Bomba de Dirección, Chevrolet</h4>
+                <h4>Somos especialistas en Fiat y Renault</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo Fiat, Volkswagen y Renault, tambien somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella3.jpeg')}}" title="Bomba de Dirección, Chevrolet"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella4.jpeg')}}" title="Somos multimarcas, gran variedad de repuestos"
                   data-gallery="portfolio-gallery-estrella" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i
@@ -280,11 +280,11 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella1.jpeg')}}" class="img-fluid" alt="">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella5.jpeg')}}" class="img-fluid" alt="Delivery a toda la Gran Caracas y nivel nacional">
               <div class="portfolio-info">
-                <h4>Kit de Crochet, Hyundai</h4>
-                <p>Tenemos todo tipo de repuestos para tu vehiculo Fiat, Volkswagen y Renault, tambien somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p></p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella1.jpeg')}}" title="Kit de Crochet, Hyundai"
+                <h4>Delivery a toda la Gran Caracas y nivel nacional</h4>
+                <p>Tenemos delivery de todo tipo de repuestos para tu vehiculo Fiat, Volkswagen y Renault, tambien somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p></p>
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella5.jpeg')}}" title="Somos multimarcas, gran variedad de repuestos"
                   data-gallery="portfolio-gallery-estrella" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i
@@ -293,11 +293,11 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella2.jpeg')}}" class="img-fluid" alt="">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella2.jpeg')}}" class="img-fluid" alt="Somos multimarcas, gran variedad de repuestos">
               <div class="portfolio-info">
-                <h4>Cigueñal, Chevrolet</h4>
+                <h4>Somos multimarcas, gran variedad de repuestos</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo Fiat, Volkswagen y Renault, tambien somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p></p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella2.jpeg')}}" title="Cigueñal, Chevrolet"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella2.jpeg')}}" title="Somos multimarcas, gran variedad de repuestos"
                   data-gallery="portfolio-gallery-estrella" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i

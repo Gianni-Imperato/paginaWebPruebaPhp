@@ -969,6 +969,20 @@ section,
   letter-spacing: 1px;      /* Espaciado entre letras */
 }
 
+
+/*--------------------------------------------------------------------
+# Sección para colores de los textos con SPAN Calculadora */
+.resaltar3 {
+  color: #ffffff;           /* Color principal (cámbialo) */
+  /* font-weight: bold;        Negrita */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2); /* Sombra opcional */
+  /* Otros efectos: */
+  /* font-size: 1.1em;         Tamaño de fuente */
+  letter-spacing: 1px;      /* Espaciado entre letras */
+}
+/*--------------------------------------------------------------------
+
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/

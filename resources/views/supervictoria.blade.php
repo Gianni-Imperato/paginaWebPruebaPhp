@@ -59,12 +59,12 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Inicio<br></a></li>
-          <li><a href="#about">Nosotros</a></li>
-          <li><a href="#services">Servicios</a></li>
+          <li><a href="{{ route('home') }}#hero" class="active">Inicio<br></a></li>
+          <li><a href="{{ route('home') }}#about">Nosotros</a></li>
+          <li><a href="{{ route('home') }}#services">Servicios</a></li>
           <li><a href="#portfolio">Productos</a></li>
           <li><a href="#videos">Promociones</a></li>
-          <li class="dropdown"><a href="#stores"><span>Cotizar</span> <i
+          <li class="dropdown"><a href="{{ route('home') }}#stores"><span>Cotizar</span> <i
                 class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="{{Route('SuperCasanova.index')}}">Super Casanova</a></li>
@@ -224,13 +224,13 @@
                 <div class="col-md-4">
                   <ul class="list-unstyled contact-list">
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584142464832"
-                        target="_blank">Greismar</a></li>
+                        target="_blank">Asesor 1</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584129830905"
-                        target="_blank">Darwin</a></li>
+                        target="_blank">Asesor 2</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584122464832"
-                        target="_blank">Leonardo</a></li>
+                        target="_blank">Asesor 3</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584241230954"
-                        target="_blank">Genesis</a></li>
+                        target="_blank">Asesor 4</a></li>
                   </ul>
                 </div>
 
@@ -238,11 +238,11 @@
                 <div class="col-md-4">
                   <ul class="list-unstyled contact-list">
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584128061229"
-                        target="_blank">Deyvid</a></li>
+                        target="_blank">Asesor 5</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584128066284"
-                        target="_blank">Nicolle</a></li>
+                        target="_blank">Asesor 6</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584141251498"
-                        target="_blank">Yorlandy</a></li>
+                        target="_blank">Asesor 7</a></li>
                   </ul>
                 </div>
 
@@ -276,11 +276,11 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaVictoria/imagenProductoVictoria1.jpeg')}}" class="img-fluid" alt="Kit de Tren Delantero, Chevrolet Optra">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaVictoria/imagenProductoVictoria4.jpeg')}}" class="img-fluid" alt="Todo para tu Chevrolet, cotiza ahora">
               <div class="portfolio-info">
-                <h4>Kit de Tren Delantero, Chevrolet Optra</h4>
+                <h4>Todo para tu Chevrolet, cotiza ahora</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo, somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaVictoria/imagenProductoVictoria1.jpeg')}}" title="Somos especialistas en repuestos multimarca, todo para tu vehiculo"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaVictoria/imagenProductoVictoria4.jpeg')}}" title="Somos especialistas en repuestos multimarca, todo para tu vehiculo"
                   data-gallery="portfolio-gallery-victoria" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i
@@ -289,11 +289,11 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaVictoria/imagenProductoVictoria2.jpeg')}}" class="img-fluid" alt="Kit de Tren Delantero, Ford Fiesta Power">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaVictoria/imagenProductoVictoria5.jpeg')}}" class="img-fluid" alt="Somos multimarca, con el mejor precio">
               <div class="portfolio-info">
-                <h4>Kit de Tren Delantero, Ford Fiesta Power</h4>
+                <h4>Somos multimarca, con el mejor precio</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo, somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaVictoria/imagenProductoVictoria2.jpeg')}}" title="Somos especialistas en repuestos multimarca, todo para tu vehiculo"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaVictoria/imagenProductoVictoria5.jpeg')}}" title="Somos especialistas en repuestos multimarca, todo para tu vehiculo"
                   data-gallery="portfolio-gallery-victoria" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i
@@ -302,11 +302,11 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaVictoria/imagenProductoVictoria3.jpeg')}}" class="img-fluid" alt="Kit de Tren Delantero, Chery Orinoco">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaVictoria/imagenProductoVictoria6.jpeg')}}" class="img-fluid" alt="Estamos a tu servicio, horarios de atención completos para nuestros clientes">
               <div class="portfolio-info">
-                <h4>Kit de Tren Delantero, Chery Orinoco</h4>
+                <h4>Estamos a tu servicio, horarios de atención completos para nuestros clientes</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo, somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaVictoria/imagenProductoVictoria3.jpeg')}}" title="Somos especialistas en repuestos multimarca, todo para tu vehiculo"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaVictoria/imagenProductoVictoria6.jpeg')}}" title="Somos especialistas en repuestos multimarca, todo para tu vehiculo"
                   data-gallery="portfolio-gallery-victoria" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i

@@ -58,13 +58,12 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Inicio<br></a></li>
-          <li><a href="#about">Nosotros</a></li>
-          <li><a href="#services">Servicios</a></li>
+          <li><a href="{{ route('home') }}#hero" class="active">Inicio<br></a></li>
+          <li><a href="{{ route('home') }}#about">Nosotros</a></li>
+          <li><a href="{{ route('home') }}#services">Servicios</a></li>
           <li><a href="#portfolio">Productos</a></li>
           <li><a href="#videos">Promociones</a></li>
-          <li class="dropdown"><a href="#stores"><span>Cotizar</span> <i
-                class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="{{ route('home') }}#stores"><span>Cotizar</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="{{Route('SuperCasanova.index')}}">Super Casanova</a></li>
               <li class="dropdown"><a href="{{Route('SuperShaya.index')}}"><span>Super Shaya</span> <i

@@ -13,6 +13,7 @@ use App\Http\Controllers\SuperShaiController;
 use App\Http\Controllers\SuperShayaController;
 use App\Http\Controllers\SuperSuspensionController;
 use App\Http\Controllers\SuperVictoriaController;
+use App\Http\Controllers\SuperCalculadoraController;
 use App\Http\Controllers\ServicioTallerSuperPanteonUnoController;
 use App\Http\Controllers\ServicioTallerSuperShayaController;
 
@@ -70,6 +71,7 @@ Route::get('SuperShai', [SuperShaiController::class, 'index'])->name('SuperShai.
 Route::get('SuperShaya', [SuperShayaController::class, 'index'])->name('SuperShaya.index'); //ruta para supershaya
 Route::get('SuperSuspension', [SuperSuspensionController::class, 'index'])->name('SuperSuspension.index'); //ruta para supersuspension
 Route::get('SuperVictoria', [SuperVictoriaController::class, 'index'])->name('SuperVictoria.index'); //ruta para supervictoria
+Route::get('SuperCalculadora', [SuperCalculadoraController::class, 'index'])->name('SuperCalculadora.index'); //ruta para supercalculadora
 Route::get('ServicioTallerSuperPanteonUno', [ServicioTallerSuperPanteonUnoController::class, 'index'])->name('ServicioTallerSuperPanteonUno.index'); //ruta para serviciotallersuperpanteonuno
 Route::get('ServicioTallerSuperShaya', [ServicioTallerSuperShayaController::class, 'index'])->name('ServicioTallerSuperShaya.index'); //ruta para serviciotallersupershaya
 

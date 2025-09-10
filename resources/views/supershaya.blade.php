@@ -58,12 +58,12 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Inicio<br></a></li>
-          <li><a href="#about">Nosotros</a></li>
-          <li><a href="#services">Servicios</a></li>
+          <li><a href="{{ route('home') }}#hero" class="active">Inicio<br></a></li>
+          <li><a href="{{ route('home') }}#about">Nosotros</a></li>
+          <li><a href="{{ route('home') }}#services">Servicios</a></li>
           <li><a href="#portfolio">Productos</a></li>
           <li><a href="#videos">Promociones</a></li>
-          <li class="dropdown"><a href="#stores"><span>Cotizar</span> <i
+          <li class="dropdown"><a href="{{ route('home') }}#stores"><span>Cotizar</span> <i
                 class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="{{Route('SuperCasanova.index')}}">Super Casanova</a></li>
@@ -228,11 +228,11 @@
                 <div class="col-md-4">
                   <ul class="list-unstyled contact-list">
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584128041607"
-                        target="_blank">Nathaly</a></li>
+                        target="_blank">Asesor 1</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584142146779"
-                        target="_blank">Everet</a></li>
+                        target="_blank">Asesor 2</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584149145239"
-                        target="_blank">Rafael</a></li>
+                        target="_blank">Asesor 3</a></li>
                   </ul>
                 </div>
 
@@ -240,11 +240,11 @@
                 <div class="col-md-4">
                   <ul class="list-unstyled contact-list">
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584127065562"
-                        target="_blank">Cristian</a></li>
+                        target="_blank">Asesor 4</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584129837365"
-                        target="_blank">Santiago</a></li>
+                        target="_blank">Asesor 5</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584122146778"
-                        target="_blank">Daniel</a></li>
+                        target="_blank">Asesor 6</a></li>
                   </ul>
                 </div>
                 
@@ -278,33 +278,33 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaShaya/imagenProductoShaya1.jpeg')}}" class="img-fluid" alt="Bomba de Dirección, Chevrolet Aveo">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaShaya/imagenProductoShaya4.jpeg')}}" class="img-fluid" alt="Todo para tu vehiculo Toyota, cotiza">
               <div class="portfolio-info">
-                <h4>Bomba de Dirección, Chevrolet Aveo</h4>
+                <h4>Todo para tu vehiculo Toyota, cotiza con nosotros</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo, somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaShaya/imagenProductoShaya1.jpeg')}}" title="Somos especialistas en repuestos multimarca, todo para tu vehiculo"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaShaya/imagenProductoShaya4.jpeg')}}" title="Somos especialistas en repuestos multimarca, todo para tu vehiculo"
                   data-gallery="portfolio-gallery-shaya" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaShaya/imagenProductoShaya2.jpeg')}}" class="img-fluid" alt="Radiador, Dongfeng S30">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaShaya/imagenProductoShaya5.jpeg')}}" class="img-fluid" alt="Todo para tu vehiculo Chevrolet, excelentes precios">
               <div class="portfolio-info">
-                <h4>Radiador, Dongfeng S30</h4>
+                <h4>Todo para tu vehiculo Chevrolet, excelentes precios</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo, somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaShaya/imagenProductoShaya2.jpeg')}}" title="Somos especialistas en repuestos multimarca, todo para tu vehiculo"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaShaya/imagenProductoShaya5.jpeg')}}" title="Somos especialistas en repuestos multimarca, todo para tu vehiculo"
                   data-gallery="portfolio-gallery-shaya" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaShaya/imagenProductoShaya3.jpeg')}}" class="img-fluid" alt="Arranque, Mazda 3 y Mazda 6">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaShaya/imagenProductoShaya6.jpeg')}}" class="img-fluid" alt="Todo para tu vehiculo Chery, somos multimarca">
               <div class="portfolio-info">
-                <h4>Arranque, Mazda 3 y Mazda 6</h4>
+                <h4>Todo para tu vehiculo Chery, somos multimarca</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo, somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaShaya/imagenProductoShaya3.jpeg')}}" title="Somos especialistas en repuestos multimarca, todo para tu vehiculo"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaShaya/imagenProductoShaya6.jpeg')}}" title="Somos especialistas en repuestos multimarca, todo para tu vehiculo"
                   data-gallery="portfolio-gallery-shaya" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
