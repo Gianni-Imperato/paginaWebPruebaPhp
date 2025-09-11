@@ -227,13 +227,13 @@
                 <div class="col-md-4">
                   <ul class="list-unstyled contact-list">
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584123743421"
-                        target="_blank">Daniel</a></li>
+                        target="_blank">Asesor 1</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584242434854"
-                        target="_blank">Alejandro</a></li>
+                        target="_blank">Asesor 2</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584149085664"
-                        target="_blank">Denis</a></li>
+                        target="_blank">Asesor 3</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584129860095"
-                        target="_blank">Endimar</a></li>
+                        target="_blank">Asesor 4</a></li>
                   </ul>
                 </div>
 
@@ -241,13 +241,13 @@
                 <div class="col-md-4">
                   <ul class="list-unstyled contact-list">
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584129399487"
-                        target="_blank">Jonathan</a></li>
+                        target="_blank">Asesor 5</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584122299556"
-                        target="_blank">Any</a></li>
+                        target="_blank">Asesor 6</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584129399019"
-                        target="_blank">Anthony</a></li>
+                        target="_blank">Asesor 7</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584241474574"
-                        target="_blank">Vendedor</a></li>
+                        target="_blank">Asesor 8</a></li>
                   </ul>
                 </div>
               </div>
@@ -280,11 +280,11 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaShai/imagenProductoShai1.jpeg')}}" class="img-fluid" alt="Kit de Tren Delantero, Dongfeng S30">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaShai/imagenProductoShai4.jpeg')}}" class="img-fluid" alt="Kit de Tren Delantero, Dongfeng S30">
               <div class="portfolio-info">
                 <h4>Kit de Tren Delantero, Dongfeng S30</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo y Camiones, tambien somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaShai/imagenProductoShai1.jpeg')}}" title="Somos especialistas en repuestos para Camiones y multimarca, todo para tu vehiculo"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaShai/imagenProductoShai4.jpeg')}}" title="Somos especialistas en repuestos para Camiones y multimarca, todo para tu vehiculo"
                   data-gallery="portfolio-gallery-shai" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i

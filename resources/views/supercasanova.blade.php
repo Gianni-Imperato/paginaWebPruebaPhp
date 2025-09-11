@@ -226,23 +226,23 @@
                 <div class="col-md-4">
                   <ul class="list-unstyled contact-list">
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584128042951"
-                        target="_blank">Brayan</a></li>
+                        target="_blank">Asesor 1</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584242936091"
-                        target="_blank">Nahomi</a></li>
+                        target="_blank">Asesor 2</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584241824569"
-                        target="_blank">Karla</a></li>
-                    <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584241865062"
-                        target="_blank">Luis</a></li>
+                        target="_blank">Asesor 3</a></li>
                   </ul>
                 </div>
 
                 <!-- Columna 2 -->
                 <div class="col-md-4">
                   <ul class="list-unstyled contact-list">
+                    <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584241865062"
+                        target="_blank">Asesor 4</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584241865031"
-                        target="_blank">Yerardin</a></li>
+                        target="_blank">Asesor 5</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584241865033"
-                        target="_blank">Eliuber</a></li>
+                        target="_blank">Asesor 6</a></li>
                   </ul>
                 </div>
 

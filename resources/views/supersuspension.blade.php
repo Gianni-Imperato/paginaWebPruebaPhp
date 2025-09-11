@@ -230,13 +230,13 @@
                 <div class="col-md-4">
                   <ul class="list-unstyled contact-list">
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584242239559"
-                        target="_blank">Andreina</a></li>
+                        target="_blank">Asesor 1</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584120221061"
-                        target="_blank">Daniel</a></li>
+                        target="_blank">Asesor 2</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584129834771"
-                        target="_blank">Daymar</a></li>
+                        target="_blank">Asesor 3</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584142397321"
-                        target="_blank">Diego</a></li>
+                        target="_blank">Asesor 4</a></li>
                   </ul>
                 </div>
 
@@ -244,11 +244,11 @@
                 <div class="col-md-4">
                   <ul class="list-unstyled contact-list">
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584242237984"
-                        target="_blank">Miguel</a></li>
+                        target="_blank">Asesor 5</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584129834763"
-                        target="_blank">Yondruil</a></li>
+                        target="_blank">Asesor 6</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584127577859"
-                        target="_blank">Jeanphol</a></li>
+                        target="_blank">Asesor 7</a></li>
                   </ul>
                 </div>
                 
@@ -282,33 +282,33 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaSuspension/imagenProductoSuspension1.jpeg')}}" class="img-fluid" alt="Bomba de Dirección, Chevrolet Aveo">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaSuspension/imagenProductoSuspension4.jpeg')}}" class="img-fluid" alt="Somos especialistas en tren delanteros y suspensiones para tu vehiculo, cotiza">
               <div class="portfolio-info">
-                <h4>Bomba de Dirección, Chevrolet Aveo</h4>
+                <h4>Somos especialistas en tren delanteros y suspensiones para tu vehiculo, cotiza</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo, Suspensiones y Tren Delanteros, tambien somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaSuspension/imagenProductoSuspension1.jpeg')}}" title="Somos especialistas en Suspensiones y Tren Delanteros, tambien multimarca, todo para tu vehiculo"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaSuspension/imagenProductoSuspension4.jpeg')}}" title="Somos especialistas en Suspensiones y Tren Delanteros, tambien multimarca, todo para tu vehiculo"
                   data-gallery="portfolio-gallery-suspension" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaSuspension/imagenProductoSuspension2.jpeg')}}" class="img-fluid" alt="Mesetas Superiores, Jeep Cherookee 4G">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaSuspension/imagenProductoSuspension5.jpeg')}}" class="img-fluid" alt="Mesetas Superiores, Jeep Cherookee 4G">
               <div class="portfolio-info">
-                <h4>Par Mesetas Superiores, Jeep Cherookee 4G</h4>
+                <h4>Todo tipo de gomas para tu vehiculo, visitanos o cotiza con nuestros asesores de ventas</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo, Suspensiones y Tren Delanteros, tambien somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaSuspension/imagenProductoSuspension2.jpeg')}}" title="Somos especialistas en Suspensiones y Tren Delanteros, tambien multimarca, todo para tu vehiculo"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaSuspension/imagenProductoSuspension5.jpeg')}}" title="Somos especialistas en Suspensiones y Tren Delanteros, tambien multimarca, todo para tu vehiculo"
                   data-gallery="portfolio-gallery-suspension" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaSuspension/imagenProductoSuspension3.jpeg')}}" class="img-fluid" alt="Cuerpo de Aceleración, Chery QQ">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaSuspension/imagenProductoSuspension6.jpeg')}}" class="img-fluid" alt="Somos multimarcas, tenemos todo tipo de repuestos y marcas para nuestros clientes">
               <div class="portfolio-info">
-                <h4>Cuerpo de Aceleración, Chery QQ</h4>
+                <h4>Somos multimarcas, tenemos todo tipo de repuestos y marcas para nuestros clientes</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo, Suspensiones y Tren Delanteros, tambien somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaSuspension/imagenProductoSuspension3.jpeg')}}" title="Somos especialistas en Suspensiones y Tren Delanteros, tambien multimarca, todo para tu vehiculo"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaSuspension/imagenProductoSuspension6.jpeg')}}" title="Somos especialistas en Suspensiones y Tren Delanteros, tambien multimarca, todo para tu vehiculo"
                   data-gallery="portfolio-gallery-suspension" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
@@ -399,6 +399,48 @@
                 <div class="video-wrapper">
                   <video controls preload="metadata">
                     <source src="{{asset('assets/images/videosTiendas/videosTiendaSuspension/promocionSuspension2.mp4')}}"
+                      type="video/mp4"> Tu navegador no soporta el elemento de video.
+                  </video>
+                </div>
+                <h3>Precios insuperables</h3>
+                <p>Descubre cómo nuestros repuestos originales mejoran el rendimiento de tu vehículo.</p>
+              </div>
+            </div><!-- End Video Item -->
+
+            <!-- Video 4 -->
+            <div class="swiper-slide">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  <video controls preload="metadata">
+                    <source src="{{asset('assets/images/videosTiendas/videosTiendaSuspension/promocionSuspension3.mp4')}}"
+                      type="video/mp4"> Tu navegador no soporta el elemento de video.
+                  </video>
+                </div>
+                <h3>Precios insuperables</h3>
+                <p>Descubre cómo nuestros repuestos originales mejoran el rendimiento de tu vehículo.</p>
+              </div>
+            </div><!-- End Video Item -->
+
+            <!-- Video 4 -->
+            <div class="swiper-slide">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  <video controls preload="metadata">
+                    <source src="{{asset('assets/images/videosTiendas/videosTiendaSuspension/promocionSuspension4.mp4')}}"
+                      type="video/mp4"> Tu navegador no soporta el elemento de video.
+                  </video>
+                </div>
+                <h3>Precios insuperables</h3>
+                <p>Descubre cómo nuestros repuestos originales mejoran el rendimiento de tu vehículo.</p>
+              </div>
+            </div><!-- End Video Item -->
+
+            <!-- Video 4 -->
+            <div class="swiper-slide">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  <video controls preload="metadata">
+                    <source src="{{asset('assets/images/videosTiendas/videosTiendaSuspension/promocionSuspension5.mp4')}}"
                       type="video/mp4"> Tu navegador no soporta el elemento de video.
                   </video>
                 </div>

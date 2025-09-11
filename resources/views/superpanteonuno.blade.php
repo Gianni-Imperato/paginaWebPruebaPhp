@@ -227,9 +227,9 @@
                 <div class="col-md-4">
                   <ul class="list-unstyled contact-list">
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584142562774"
-                        target="_blank">Angel</a></li>
+                        target="_blank">Asesor 1</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584149165890"
-                        target="_blank">Sherezade</a></li>
+                        target="_blank">Asesor 2</a></li>
                   </ul>
                 </div>
 

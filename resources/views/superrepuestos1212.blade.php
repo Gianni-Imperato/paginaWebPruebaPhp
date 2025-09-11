@@ -227,13 +227,13 @@
                 <div class="col-md-4">
                   <ul class="list-unstyled contact-list">
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584142563866"
-                        target="_blank">Edinson</a></li>
+                        target="_blank">Asesor 1</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584142256738"
-                        target="_blank">Rolando</a></li>
+                        target="_blank">Asesor 2</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584142382384"
-                        target="_blank">Yaquelin</a></li>
+                        target="_blank">Asesor 3</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584242508538"
-                        target="_blank">Roibert</a></li>
+                        target="_blank">Asesor 4</a></li>
                   </ul>
                 </div>
 
@@ -241,11 +241,11 @@
                 <div class="col-md-4">
                   <ul class="list-unstyled contact-list">
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584242522774"
-                        target="_blank">Ronier</a></li>
+                        target="_blank">Asesor 5</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584142359337"
-                        target="_blank">Jose</a></li>
+                        target="_blank">Asesor 6</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584242552646"
-                        target="_blank">Josvier</a></li>
+                        target="_blank">Asesor 7</a></li>
                   </ul>
                 </div>
                 
@@ -278,11 +278,11 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaRepuestos1212/imagenProductoRepuestos12121.jpeg')}}" class="img-fluid" alt="Modulo Bomba de Gasolina Completa Explorer 4.6">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaRepuestos1212/imagenTiendaRepuestos12126.jpeg')}}" class="img-fluid" alt="Todo para tus vehiculos Jeep y Ford, cotiza con nosotros">
               <div class="portfolio-info">
-                <h4>Modulo Bomba de Gasolina Completa, Explorer 4.6</h4>
+                <h4>Todo para tus vehiculos Jeep y Ford, cotiza con nosotros</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo Jeep y Ford, tambien somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaRepuestos1212/imagenProductoRepuestos12121.jpeg')}}" title="Somos especialistas en repuestos Jeep, Ford y multimarca, todo para tu vehiculo"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaRepuestos1212/imagenTiendaRepuestos12126.jpeg')}}" title="Somos especialistas en repuestos Jeep, Ford y multimarca, todo para tu vehiculo"
                   data-gallery="portfolio-gallery-repuestos1212" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i
@@ -291,11 +291,11 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaRepuestos1212/imagenProductoRepuestos12122.jpeg')}}" class="img-fluid" alt="Tapa Valvula con Codo, Aveo">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaRepuestos1212/imagenTiendaRepuestos12125.jpeg')}}" class="img-fluid" alt="Tenemos delivery en toda la Gran Caracas, envios rápidos y seguros">
               <div class="portfolio-info">
-                <h4>Tapa Valvula con Codo, Aveo</h4>
+                <h4>Tenemos delivery en toda la Gran Caracas, envios rápidos y seguros</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo Jeep y Ford, tambien somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaRepuestos1212/imagenProductoRepuestos12122.jpeg')}}" title="Somos especialistas en repuestos Jeep, Ford y multimarca, todo para tu vehiculo"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaRepuestos1212/imagenTiendaRepuestos12125.jpeg')}}" title="Somos especialistas en repuestos Jeep, Ford y multimarca, todo para tu vehiculo"
                   data-gallery="portfolio-gallery-repuestos1212" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i
@@ -304,9 +304,9 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaRepuestos1212/imagenProductoRepuestos12123.jpeg')}}" class="img-fluid" alt="Kit de Tren Delantero, Arauca">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaRepuestos1212/imagenProductoRepuestos12123.jpeg')}}" class="img-fluid" alt="Somos multimarcas, tenemos todo tipo de repuestos y marcas para nuestros clientes">
               <div class="portfolio-info">
-                <h4>Kit de Tren Delantero, Arauca</h4>
+                <h4>Somos multimarcas, tenemos todo tipo de repuestos y marcas para nuestros clientes</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo Jeep y Ford, tambien somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
                 <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaRepuestos1212/imagenProductoRepuestos12123.jpeg')}}" title="Somos especialistas en repuestos Jeep, Ford y multimarca, todo para tu vehiculo"
                   data-gallery="portfolio-gallery-repuestos1212" class="glightbox preview-link"><i

@@ -223,7 +223,7 @@
                 <div class="col-md-4">
                   <ul class="list-unstyled contact-list">
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584242090580" 
-                      target="_blank">Lucas</a></li>
+                      target="_blank">Especialista</a></li>
                   </ul>
                 </div>
 

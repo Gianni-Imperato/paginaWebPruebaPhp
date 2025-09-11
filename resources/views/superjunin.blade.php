@@ -223,11 +223,11 @@
                 <div class="col-md-4">
                   <ul class="list-unstyled contact-list">
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584129860090"
-                        target="_blank">Melany</a></li>
+                        target="_blank">Asesor 1</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584122296240"
-                        target="_blank">Diego</a></li>
+                        target="_blank">Asesor 2</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584128063396"
-                        target="_blank">Miranda</a></li>
+                        target="_blank">Asesor 3</a></li>
                   </ul>
                 </div>
 
@@ -235,11 +235,11 @@
                 <div class="col-md-4">
                   <ul class="list-unstyled contact-list">
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584122296279"
-                        target="_blank">Gregori</a></li>
+                        target="_blank">Asesor 4</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584241666869"
-                        target="_blank">Victor</a></li>
+                        target="_blank">Asesor 5</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584241939097"
-                        target="_blank">Lisandro</a></li>
+                        target="_blank">Asesor 6</a></li>
                   </ul>
                 </div>
 
@@ -273,22 +273,22 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaJunin/imagenProductoJunin1.jpeg')}}" class="img-fluid" alt="Chery Arauca y X1">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaJunin/imagenProductoJunin4.jpeg')}}" class="img-fluid" alt="Chery Arauca y X1">
               <div class="portfolio-info">
-                <h4>Chery Arauca y X1</h4>
+                <h4>Somos especialistas en repuestos Chery, cotiza con nuestros asesores</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo Chery, Jac, Dongfeng, Saic, Zotye y Haima, tambien somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaJunin/imagenProductoJunin1.jpeg')}}" title="Somos especialistas en Chery, Jac, Dongfeng, Saic, Zotye y Haima"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaJunin/imagenProductoJunin4.jpeg')}}" title="Somos especialistas en Chery, Jac, Dongfeng, Saic, Zotye y Haima"
                   data-gallery="portfolio-gallery-junin" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaJunin/imagenProductoJunin2.jpeg')}}" class="img-fluid" alt="Haima 7">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaJunin/imagenProductoJunin5.jpeg')}}" class="img-fluid" alt="Ofrecemos la mejor calidad en repuestos, somos multimarca">
               <div class="portfolio-info">
-                <h4>Haima 7</h4>
+                <h4>Ofrecemos la mejor calidad en repuestos, somos multimarca</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo Chery, Jac, Dongfeng, Saic, Zotye y Haima, tambien somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaJunin/imagenProductoJunin2.jpeg')}}" title="Somos especialistas en Chery, Jac, Dongfeng, Saic, Zotye y Haima"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaJunin/imagenProductoJunin5.jpeg')}}" title="Somos especialistas en Chery, Jac, Dongfeng, Saic, Zotye y Haima"
                   data-gallery="portfolio-gallery-junin" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>

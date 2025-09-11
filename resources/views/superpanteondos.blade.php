@@ -227,13 +227,13 @@
                 <div class="col-md-4">
                   <ul class="list-unstyled contact-list">
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584128065156"
-                        target="_blank">Darianna</a></li>
+                        target="_blank">Asesor 1</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584241724545"
-                        target="_blank">Cristian</a></li>
+                        target="_blank">Asesor 2</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584128062359"
-                        target="_blank">Kevin</a></li>
+                        target="_blank">Asesor 3</a></li>
                     <li><i class="fab fa-whatsapp text-success me-2"></i><a href="https://wa.me/584129835684"
-                        target="_blank">Alejandro</a></li>
+                        target="_blank">Asesor 4</a></li>
                   </ul>
                 </div>
 
@@ -417,6 +417,34 @@
                 <div class="video-wrapper">
                   <video controls preload="metadata">
                     <source src="{{asset('assets/images/videosTiendas/videosTiendaPanteonDos/promocionPanteonDos4.mp4')}}"
+                      type="video/mp4"> Tu navegador no soporta el elemento de video.
+                  </video>
+                </div>
+                <h3>Variedad de productos</h3>
+                <p>Descubre cómo nuestros repuestos originales mejoran el rendimiento de tu vehículo.</p>
+              </div>
+            </div><!-- End Video Item -->
+
+            <!-- Video 6 -->
+            <div class="swiper-slide">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  <video controls preload="metadata">
+                    <source src="{{asset('assets/images/videosTiendas/videosTiendaPanteonDos/promocionPanteonDos5.mp4')}}"
+                      type="video/mp4"> Tu navegador no soporta el elemento de video.
+                  </video>
+                </div>
+                <h3>Variedad de productos</h3>
+                <p>Descubre cómo nuestros repuestos originales mejoran el rendimiento de tu vehículo.</p>
+              </div>
+            </div><!-- End Video Item -->
+
+            <!-- Video 7 -->
+            <div class="swiper-slide">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  <video controls preload="metadata">
+                    <source src="{{asset('assets/images/videosTiendas/videosTiendaPanteonDos/promocionPanteonDos6.mp4')}}"
                       type="video/mp4"> Tu navegador no soporta el elemento de video.
                   </video>
                 </div>
