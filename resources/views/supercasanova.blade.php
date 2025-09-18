@@ -85,6 +85,7 @@
               <li><a href="{{Route('SuperSuspension.index')}}">Super Suspensión</a></li>
               <li><a href="{{Route('SuperEstrella.index')}}">Super Estrella</a></li>
               <li><a href="{{Route('SuperRepuestos1212.index')}}">Super Repuestos1212</a></li>
+              <li><a href="{{Route('SuperCalculadora.index')}}">Super Calculadora</a></li>
 
             </ul>
           </li>
@@ -275,11 +276,11 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaCasanova/imagenProductoCasanova1.jpeg')}}" class="img-fluid" alt="Mitsubishi, Kia y Hyundai">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaCasanova/imagenProductoCasanova5.jpeg')}}" class="img-fluid" alt="Mitsubishi, Kia y Hyundai">
               <div class="portfolio-info">
                 <h4>Mitsubishi, Kia y Hyundai</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo Mitsubishi, Kia y Hyundai, tambien somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaCasanova/imagenProductoCasanova1.jpeg')}}" title="Mitsubishi, Kia, Hyundai y más"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaCasanova/imagenProductoCasanova5.jpeg')}}" title="Mitsubishi, Kia, Hyundai y más"
                   data-gallery="portfolio-gallery-casanova" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i
@@ -301,11 +302,11 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaCasanova/imagenProductoCasanova2.jpeg')}}" class="img-fluid" alt="Todo tipo de Repuestos">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaCasanova/imagenProductoCasanova4.jpeg')}}" class="img-fluid" alt="Todo tipo de Repuestos">
               <div class="portfolio-info">
                 <h4>Todo tipo de Repuestos</h4>
                 <p>Somos especialistas en repuestos para todo tipo de vehiculos, en especial Mitsubishi, Kia y Hyundai. Consulta con nuestros vendedores la pieza que buscas ¡Al mejor precio!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaCasanova/imagenProductoCasanova2.jpeg')}}" title="Todo tipo de Repuestos, somos multimarcas"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaCasanova/imagenProductoCasanova4.jpeg')}}" title="Todo tipo de Repuestos, somos multimarcas"
                   data-gallery="portfolio-gallery-casanova" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i
@@ -426,6 +427,20 @@
                 <div class="video-wrapper">
                   <video controls preload="metadata">
                     <source src="{{asset('assets/images/videosTiendas/videosTiendaCasanova/promocionCasanova4.mp4')}}"
+                      type="video/mp4"> Tu navegador no soporta el elemento de video.
+                  </video>
+                </div>
+                <h3>Variedad de productos</h3>
+                <p>Descubre cómo nuestros repuestos originales mejoran el rendimiento de tu vehículo.</p>
+              </div>
+            </div><!-- End Video Item -->
+
+            <!-- Video 6 -->
+            <div class="swiper-slide">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  <video controls preload="metadata">
+                    <source src="{{asset('assets/images/videosTiendas/videosTiendaCasanova/promocionCasanova5.mp4')}}"
                       type="video/mp4"> Tu navegador no soporta el elemento de video.
                   </video>
                 </div>

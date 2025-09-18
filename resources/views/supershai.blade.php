@@ -86,6 +86,7 @@
               <li><a href="{{Route('SuperSuspension.index')}}">Super Suspensión</a></li>
               <li><a href="{{Route('SuperEstrella.index')}}">Super Estrella</a></li>
               <li><a href="{{Route('SuperRepuestos1212.index')}}">Super Repuestos1212</a></li>
+              <li><a href="{{Route('SuperCalculadora.index')}}">Super Calculadora</a></li>
 
             </ul>
           </li>
@@ -280,9 +281,9 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaShai/imagenProductoShai4.jpeg')}}" class="img-fluid" alt="Kit de Tren Delantero, Dongfeng S30">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaShai/imagenProductoShai4.jpeg')}}" class="img-fluid" alt="Somos especialistas en Camiones, tambien somos multimarca">
               <div class="portfolio-info">
-                <h4>Kit de Tren Delantero, Dongfeng S30</h4>
+                <h4>Somos especialistas en Camiones, tambien somos multimarca</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo y Camiones, tambien somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
                 <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaShai/imagenProductoShai4.jpeg')}}" title="Somos especialistas en repuestos para Camiones y multimarca, todo para tu vehiculo"
                   data-gallery="portfolio-gallery-shai" class="glightbox preview-link"><i
@@ -293,11 +294,11 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaShai/imagenProductoShai2.jpeg')}}" class="img-fluid" alt="Kit de Tren Delantero, Chery Orinoco">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaShai/imagenProductoShai5.jpeg')}}" class="img-fluid" alt="Kit de Tren Delantero, Chery Orinoco">
               <div class="portfolio-info">
-                <h4>Kit de Tren Delantero, Chery Orinoco</h4>
+                <h4>Tenemos todo tipo de repuestos para vehiculos asiaticos</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo y Camiones, tambien somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaShai/imagenProductoShai2.jpeg')}}" title="Somos especialistas en repuestos para Camiones y multimarca, todo para tu vehiculo"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaShai/imagenProductoShai5.jpeg')}}" title="Somos especialistas en repuestos para Camiones y multimarca, todo para tu vehiculo"
                   data-gallery="portfolio-gallery-shai" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i
@@ -306,11 +307,11 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaShai/imagenProductoShai3.jpeg')}}" class="img-fluid" alt="Kit de Tren Delantero, Chery Grand Tigger 4x4 y 4x2">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaShai/imagenProductoShai4.jpeg')}}" class="img-fluid" alt="Kit de Tren Delantero, Chery Grand Tigger 4x4 y 4x2">
               <div class="portfolio-info">
-                <h4>Kit de Tren Delantero, Chery Grand Tigger 4x4 y 4x2</h4>
+                <h4>Gran variedad con la mejor calidad y precios para nuestros clientes</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo y Camiones, tambien somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaShai/imagenProductoShai3.jpeg')}}" title="Somos especialistas en repuestos para Camiones y multimarca, todo para tu vehiculo"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaShai/imagenProductoShai4.jpeg')}}" title="Somos especialistas en repuestos para Camiones y multimarca, todo para tu vehiculo"
                   data-gallery="portfolio-gallery-shai" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i

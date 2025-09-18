@@ -86,6 +86,7 @@
               <li><a href="{{Route('SuperSuspension.index')}}">Super Suspensión</a></li>
               <li><a href="{{Route('SuperEstrella.index')}}">Super Estrella</a></li>
               <li><a href="{{Route('SuperRepuestos1212.index')}}">Super Repuestos1212</a></li>
+              <li><a href="{{Route('SuperCalculadora.index')}}">Super Calculadora</a></li>
 
             </ul>
           </li>
@@ -266,11 +267,11 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonDos/imagenProductoPanteonDos1.jpeg')}}" class="img-fluid" alt="Base de Motor, Hyundai">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonDos/imagenProductoPanteonDos11.jpeg')}}" class="img-fluid" alt="Somos especialistas en repuestos multimarca, cotiza con nosotros">
               <div class="portfolio-info">
-                <h4>Base de Motor, Hyundai</h4>
+                <h4>Somos especialistas en repuestos multimarca, cotiza con nosotros</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo ¡Somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonDos/imagenProductoPanteonDos1.jpeg')}}" title="Somos especialistas en repuestos para tu vehiculo multimarca"  
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonDos/imagenProductoPanteonDos11.jpeg')}}" title="Somos especialistas en repuestos para tu vehiculo multimarca"  
                   data-gallery="portfolio-gallery-panteonDos" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i
@@ -279,11 +280,11 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonDos/imagenProductoPanteonDos2.jpeg')}}" class="img-fluid" alt="Bomba de Aceite, Chery Arauca y X1">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonDos/imagenProductoPanteonDos22.jpeg')}}" class="img-fluid" alt="Gran variedad de repuestos y marcas, todo al mejor precio">
               <div class="portfolio-info">
-                <h4>Bomba de Aceite, Chery Arauca y X1</h4>
+                <h4>Gran variedad de repuestos y marcas, todo al mejor precio</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo ¡Somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonDos/imagenProductoPanteonDos2.jpeg')}}" title="Somos especialistas en repuestos para tu vehiculo multimarca"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonDos/imagenProductoPanteonDos22.jpeg')}}" title="Somos especialistas en repuestos para tu vehiculo multimarca"
                   data-gallery="portfolio-gallery-panteonDos" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i
@@ -292,11 +293,11 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonDos/imagenProductoPanteonDos3.jpeg')}}" class="img-fluid" alt="Bomba de Aceite, Chevrolet Aveo">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonDos/imagenProductoPanteonDos33.jpeg')}}" class="img-fluid" alt="Atención especializada con la mejor calidad del mercado, visitanos">
               <div class="portfolio-info">
-                <h4>Bomba de Aceite, Chevrolet Aveo</h4>
+                <h4>Atención especializada con la mejor calidad del mercado, visitanos</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo ¡Somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonDos/imagenProductoPanteonDos3.jpeg')}}" title="Somos especialistas en repuestos para tu vehiculo multimarca"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonDos/imagenProductoPanteonDos33.jpeg')}}" title="Somos especialistas en repuestos para tu vehiculo multimarca"
                   data-gallery="portfolio-gallery-panteonDos" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i
@@ -445,6 +446,20 @@
                 <div class="video-wrapper">
                   <video controls preload="metadata">
                     <source src="{{asset('assets/images/videosTiendas/videosTiendaPanteonDos/promocionPanteonDos6.mp4')}}"
+                      type="video/mp4"> Tu navegador no soporta el elemento de video.
+                  </video>
+                </div>
+                <h3>Variedad de productos</h3>
+                <p>Descubre cómo nuestros repuestos originales mejoran el rendimiento de tu vehículo.</p>
+              </div>
+            </div><!-- End Video Item -->
+
+            <!-- Video 7 -->
+            <div class="swiper-slide">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  <video controls preload="metadata">
+                    <source src="{{asset('assets/images/videosTiendas/videosTiendaPanteonDos/promocionPanteonDos7.mp4')}}"
                       type="video/mp4"> Tu navegador no soporta el elemento de video.
                   </video>
                 </div>

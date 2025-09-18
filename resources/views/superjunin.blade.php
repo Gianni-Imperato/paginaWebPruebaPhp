@@ -86,6 +86,7 @@
               <li><a href="{{Route('SuperSuspension.index')}}">Super Suspensión</a></li>
               <li><a href="{{Route('SuperEstrella.index')}}">Super Estrella</a></li>
               <li><a href="{{Route('SuperRepuestos1212.index')}}">Super Repuestos1212</a></li>
+              <li><a href="{{Route('SuperCalculadora.index')}}">Super Calculadora</a></li>
 
             </ul>
           </li>
@@ -295,11 +296,11 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaJunin/imagenProductoJunin3.jpeg')}}" class="img-fluid" alt="Dongfeng Motors ZNA">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaJunin/imagenProductoJunin6.jpeg')}}" class="img-fluid" alt="Somos multimarcas, tenemos todo tipo de repuestos">
               <div class="portfolio-info">
-                <h4>Dongfeng Motors ZNA</h4>
+                <h4>Somos multimarcas, tenemos todo tipo de repuestos</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo Chery, Jac, Dongfeng, Saic, Zotye y Haima, tambien somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaJunin/imagenProductoJunin3.jpeg')}}" title="Somos especialistas en Chery, Jac, Dongfeng, Saic, Zotye y Haima"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaJunin/imagenProductoJunin6.jpeg')}}" title="Somos especialistas en Chery, Jac, Dongfeng, Saic, Zotye y Haima"
                   data-gallery="portfolio-gallery-junin" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>

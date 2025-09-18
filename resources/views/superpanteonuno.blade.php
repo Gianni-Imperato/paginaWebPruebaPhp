@@ -86,6 +86,7 @@
               <li><a href="{{Route('SuperSuspension.index')}}">Super Suspensión</a></li>
               <li><a href="{{Route('SuperEstrella.index')}}">Super Estrella</a></li>
               <li><a href="{{Route('SuperRepuestos1212.index')}}">Super Repuestos1212</a></li>
+              <li><a href="{{Route('SuperCalculadora.index')}}">Super Calculadora</a></li>
 
             </ul>
           </li>
@@ -262,11 +263,11 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonUno/imagenProductoPanteonUno1.jpeg')}}" class="img-fluid" alt="Bomba de agua Chery Orinoco, Arauca y X1">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonUno/imagenProductoPanteonUno11.jpeg')}}" class="img-fluid" alt="Somos especialistas en repuestos multimarca, cotiza con nosotros">
               <div class="portfolio-info">
-                <h4>Bomba de agua Chery Orinoco, Arauca y X1</h4>
+                <h4>Somos especialistas en repuestos multimarca, cotiza con nosotros</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo Chery y somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonUno/imagenProductoPanteonUno1.jpeg')}}" title="Somos especialistas en repuestos Chery y multimarca, todo para tu vehiculo"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonUno/imagenProductoPanteonUno11.jpeg')}}" title="Somos especialistas en repuestos Chery y multimarca, todo para tu vehiculo"
                   data-gallery="portfolio-gallery-panteonUno" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i
@@ -275,11 +276,11 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonUno/imagenProductoPanteonUno2.jpeg')}}" class="img-fluid" alt="Refrigerantes Dr. Care para tu vehiculo">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonUno/imagenProductoPanteonUno22.jpeg')}}" class="img-fluid" alt="Gran variedad de repuestos y marcas, todo al mejor precio">
               <div class="portfolio-info">
-                <h4>Refrigerantes Dr. Care para tu vehiculo</h4>
+                <h4>Gran variedad de repuestos y marcas, todo al mejor precio</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo Chery y somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonUno/imagenProductoPanteonUno2.jpeg')}}" title="Somos especialistas en repuestos Chery y multimarca, todo para tu vehiculo"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonUno/imagenProductoPanteonUno22.jpeg')}}" title="Somos especialistas en repuestos Chery y multimarca, todo para tu vehiculo"
                   data-gallery="portfolio-gallery-panteonUno" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i
@@ -288,11 +289,11 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonUno/imagenProductoPanteonUno3.jpeg')}}" class="img-fluid" alt="Bomba de agua Ford Fiesta Max, balita y Ka">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonUno/imagenProductoPanteonUno33.jpeg')}}" class="img-fluid" alt="Atención especializada con la mejor calidad del mercado, visitanos">
               <div class="portfolio-info">
-                <h4>Bomba de agua Ford Fiesta Max, Balita y Ka</h4>
+                <h4>Atención especializada con la mejor calidad del mercado, visitanos</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo Chery y somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonUno/imagenProductoPanteonUno3.jpeg')}}" title="Somos especialistas en repuestos Chery y multimarca, todo para tu vehiculo"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonUno/imagenProductoPanteonUno33.jpeg')}}" title="Somos especialistas en repuestos Chery y multimarca, todo para tu vehiculo"
                   data-gallery="portfolio-gallery-panteonUno" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i

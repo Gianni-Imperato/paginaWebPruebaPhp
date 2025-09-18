@@ -94,9 +94,10 @@
 
         .input-label {
             display: block;
+            font-weight: 500;
             color: #34495e;
-            font-weight: bold;
-            margin-bottom: 4px;
+            margin-bottom: 8px;
+            font-size: 14px;
         }
 
         .provider-select {
@@ -147,13 +148,9 @@
             font-weight: 600;
             transition: all 0.3s ease;
             background: #f8fbff;
-        }
-
-        .delivery-input:focus {
-            outline: none;
-            border-color: #2196f3;
-            box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
-            background: white;
+            pointer-events: none;
+            /* No editable */
+            opacity: 0.8;
         }
 
         .currency-toggle {
@@ -239,7 +236,7 @@
         }
 
         .final-price {
-            background: linear-gradient(135deg, #000000 0%, #e0b909 100%);
+            background: linear-gradient(135deg, #000000 0%, #efb810 100%);
             color: white;
             border-radius: 15px;
             padding: 20px;
@@ -268,6 +265,34 @@
             font-size: 14px;
         }
 
+        .reference-price {
+            background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 15px;
+            border: 2px solid #2e7d32;
+        }
+
+        .reference-price .label {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .reference-price .value {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .reference-note {
+            font-size: 11px;
+            opacity: 0.8;
+            margin-top: 8px;
+            font-style: italic;
+        }
+
         .provider-info {
             background: #e3f2fd;
             border-radius: 12px;
@@ -285,11 +310,12 @@
         }
 
         .currency-indicator {
-            display: block;
-            text-align: center; /* centra el texto */
-            font-size: 0.9rem; /* un poco más pequeño que el label */
-            color: #666; /* gris sutil */
-            margin-bottom: 8px; /* separación antes del input */
+            display: flex;
+            justify-content: center;
+            /* centra horizontalmente */
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 8px;
         }
 
         @media (max-width: 480px) {
@@ -344,6 +370,7 @@
                             <li><a href="{{ Route('SuperSuspension.index') }}">Super Suspensión</a></li>
                             <li><a href="{{ Route('SuperEstrella.index') }}">Super Estrella</a></li>
                             <li><a href="{{ Route('SuperRepuestos1212.index') }}">Super Repuestos1212</a></li>
+                            <li><a href="{{Route('SuperCalculadora.index')}}">Super Calculadora</a></li>
 
                         </ul>
                     </li>
@@ -371,11 +398,11 @@
 
                         <!-- @if (Route::has('register'))
     <a
-                                        href="{{ route('register') }}"
-                                        class="rounded-md px-3 py-2 text-white ring-1 ring-transparent transition hover:text-white/70 focus:outline-none focus-visible:ring-[#FF2D20]"
-                                    >
-                                        Register
-                                    </a>
+                                            href="{{ route('register') }}"
+                                            class="rounded-md px-3 py-2 text-white ring-1 ring-transparent transition hover:text-white/70 focus:outline-none focus-visible:ring-[#FF2D20]"
+                                        >
+                                            Register
+                                        </a>
     @endif -->
                     @endauth
                 </nav>
@@ -389,7 +416,7 @@
     <div class="container">
         <div class="headerr">
             <h1>Corporación Super Repuestos</h1>
-            <p>Calculadora para Vendedores</p>
+            <p>Calculadora para vendedores</p>
         </div>
 
         <div class="input-group">
@@ -408,7 +435,7 @@
                 <option value="proveedor10">Gran Import</option>
                 <option value="proveedor11">Italven</option>
                 <option value="proveedor12">Jaffensa</option>
-                <option value="proveedor13">JD</option>
+                <option value="proveedor13">JD Velko</option>
                 <option value="proveedor14">Perfect</option>
                 <option value="proveedor15">Rodalven</option>
                 <option value="proveedor16">Sendai Motors</option>
@@ -416,6 +443,8 @@
                 <option value="proveedor18">Trenden</option>
                 <option value="proveedor19">TVA Grupo 77</option>
                 <option value="proveedor20">Volker</option>
+                <option value="proveedor21">Hanei Motors</option>
+                <option value="proveedor22">Garcoli</option>
             </select>
         </div>
 
@@ -432,10 +461,10 @@
         </div>
 
         <div class="delivery-section">
-            <label class="input-label">🚚 Monto del Delivery</label>
-            <div class="currency-indicator" id="deliveryCurrencyIndicator">Ingrese el delivery en USD ($)</div>
-            <input type="number" class="delivery-input" id="deliveryInput" placeholder="0.00" step="0.01"
-                min="0">
+            <label class="input-label">🚚 Monto del Delivery (Automático)</label>
+            <div class="currency-indicator" id="deliveryCurrencyIndicator">Delivery fijo del proveedor</div>
+            <input type="text" class="delivery-input" id="deliveryInput" placeholder="Seleccione un proveedor"
+                readonly>
         </div>
 
         <div class="results" id="results" style="display: none;">
@@ -466,6 +495,14 @@
                 </div>
             </div>
 
+            <!-- Cuadro adicional solo visible en sección Bolívares -->
+            <div class="reference-price" id="referencePrice" style="display: none;">
+                <div class="label">🏷️ Referencia para Etiquetado (USD)</div>
+                <div class="value" id="referencePriceValue">$0.00</div>
+                <div class="reference-note">Precio final Bs convertido a USD (Tasa: <span
+                        id="exchangeRateDisplay">0.00</span>)</div>
+            </div>
+
             <div class="provider-info" id="providerInfo"></div>
         </div>
 
@@ -473,11 +510,17 @@
     </div>
 
     <script>
+        // ==========================================
+        // TASA DE CAMBIO CENTRALIZADA
+        // Solo cambiar aquí para actualizar toda la calculadora
+        // ==========================================
+        const GLOBAL_EXCHANGE_RATE = 163.65; // ← CAMBIAR SOLO AQUÍ DIARIAMENTE
+
         // Configuración de proveedores con condiciones duales USD/BS
         const providerConfig = {
             proveedor1: {
                 name: "Asiamerica",
-                exchangeRate: 154.01,
+                deliveryFixed: 0.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
@@ -487,7 +530,7 @@
                         operation2: {
                             type: 'multiply',
                             value: 1.40
-                        } // Multiplicar entre 0.55
+                        } // Multiplicar entre 1.40
                     },
                     BS: {
                         operation1: {
@@ -497,14 +540,14 @@
                         operation2: {
                             type: 'divide',
                             value: 0.55
-                        } // Dividir por 1.40
+                        } // Dividir por 0.55
                     }
                 },
-                notes: "Cálculo USD: (Monto - 0%) ÷ 0.55 | Cálculo BS: (Monto + 0%) × 1.40"
+                notes: "Cálculo USD: (Monto - 36%) × 1.40 | Cálculo BS: (Monto - 36%) ÷ 0.55"
             },
             proveedor2: {
                 name: "Autopartes",
-                exchangeRate: 154.01,
+                deliveryFixed: 3.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
@@ -527,11 +570,11 @@
                         } // Dividir por 0.55
                     }
                 },
-                notes: "Cálculo USD: (Monto - 25%) ÷ 0.60 | Cálculo BS: (Monto + 15%) × 1.35"
+                notes: "Cálculo USD: (Monto + 15%) ÷ 0.60 | Cálculo BS: (Monto - 25%) × 1.35"
             },
             proveedor3: {
                 name: "Bravo Import",
-                exchangeRate: 154.01,
+                deliveryFixed: 0.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
@@ -554,11 +597,11 @@
                         } // Multiplicar por 1.50
                     }
                 },
-                notes: "Cálculo USD: (Monto - 20%) ÷ 0.65 | Cálculo BS: (Monto + 12%) × 1.45"
+                notes: "Cálculo USD: (Monto × 1.20) - 10% | Cálculo BS: (Monto + 12%) ÷ 0.65"
             },
             proveedor4: {
                 name: "Chino 1",
-                exchangeRate: 154.01,
+                deliveryFixed: 0.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
@@ -581,11 +624,11 @@
                         } // Dividir por 0.55
                     }
                 },
-                notes: "Cálculo USD: (Monto - 28%) ÷ 0.58 | Cálculo BS: (Monto + 18%) × 1.38"
+                notes: "Cálculo USD: (Monto ÷ 0.75) + 8% | Cálculo BS: (Monto - 28%) × 1.38"
             },
             proveedor5: {
                 name: "Chino 2",
-                exchangeRate: 154.01,
+                deliveryFixed: 0.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
@@ -608,11 +651,11 @@
                         } // Dividir por 0.55
                     }
                 },
-                notes: "Cálculo USD: (Monto - 22%) ÷ 0.62 | Cálculo BS: (Monto + 14%) × 1.42"
+                notes: "Cálculo USD: (Monto + 20%) × 0.85 | Cálculo BS: (Monto ÷ 0.80) - 5%"
             },
             proveedor6: {
                 name: "Chino 3",
-                exchangeRate: 154.01,
+                deliveryFixed: 0.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
@@ -635,17 +678,17 @@
                         } // Dividir por 0.55
                     }
                 },
-                notes: "Cálculo USD: (Monto - 30%) ÷ 0.55 | Cálculo BS: (Monto + 10%) × 1.40"
+                notes: "Cálculo USD: (Monto - 30%) ÷ 0.55 | Cálculo BS: (Monto × 1.15) + 18%"
             },
             proveedor7: {
                 name: "Comercial 88",
-                exchangeRate: 154.01,
+                deliveryFixed: 0.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
                             type: 'subtract',
-                            value: 0
-                        }, // Restar 0%
+                            value: 30
+                        }, // Restar 30%
                         operation2: {
                             type: 'multiply',
                             value: 1.40
@@ -662,11 +705,11 @@
                         } // Dividir por 0.55
                     }
                 },
-                notes: "Cálculo USD: (Monto - 26%) ÷ 0.59 | Cálculo BS: (Monto + 16%) × 1.36"
+                notes: "Cálculo USD: (Monto × 1.25) - 15% | Cálculo BS: (Monto + 22%) ÷ 0.68"
             },
             proveedor8: {
                 name: "EDS",
-                exchangeRate: 154.01,
+                deliveryFixed: 0.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
@@ -689,11 +732,11 @@
                         } // Dividir por 0.55
                     }
                 },
-                notes: "Cálculo USD: (Monto - 24%) ÷ 0.61 | Cálculo BS: (Monto + 13%) × 1.43"
+                notes: "Cálculo USD: (Monto ÷ 0.70) × 1.10 | Cálculo BS: (Monto - 32%) + 25%"
             },
             proveedor9: {
                 name: "Excelso",
-                exchangeRate: 154.01,
+                deliveryFixed: 0.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
@@ -716,11 +759,11 @@
                         } // Dividir por 0.55
                     }
                 },
-                notes: "Cálculo USD: (Monto - 27%) ÷ 0.57 | Cálculo BS: (Monto + 17%) × 1.37"
+                notes: "Cálculo USD: (Monto + 12%) ÷ 0.72 | Cálculo BS: (Monto × 1.30) - 20%"
             },
             proveedor10: {
                 name: "Gran Import",
-                exchangeRate: 154.01,
+                deliveryFixed: 5.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
@@ -728,9 +771,9 @@
                             value: 0
                         }, // Restar 0%
                         operation2: {
-                            type: 'divide',
-                            value: 0.55
-                        } // Dividir por 0.55
+                            type: 'multiply',
+                            value: 1.40
+                        } // Multiplicar por 1.40
                     },
                     BS: {
                         operation1: {
@@ -743,11 +786,11 @@
                         } // Dividir por 0.55
                     }
                 },
-                notes: "Cálculo USD: (Monto - 23%) ÷ 0.63 | Cálculo BS: (Monto + 11%) × 1.44"
+                notes: "Cálculo USD: (Monto - 18%) × 1.35 | Cálculo BS: (Monto ÷ 0.77) + 14%"
             },
             proveedor11: {
                 name: "Italven",
-                exchangeRate: 154.01,
+                deliveryFixed: 3.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
@@ -757,7 +800,7 @@
                         operation2: {
                             type: 'multiply',
                             value: 1.46
-                        } // Multiplicar por 1.86
+                        } // Multiplicar por 1.46
                     },
                     BS: {
                         operation1: {
@@ -770,11 +813,11 @@
                         } // Multiplicar por 1.86
                     }
                 },
-                notes: "Cálculo USD: (Monto - 23%) ÷ 0.63 | Cálculo BS: (Monto + 11%) × 1.44"
+                notes: "Cálculo USD: (Monto - 18%) × 1.35 | Cálculo BS: (Monto ÷ 0.77) + 14%"
             },
             proveedor12: {
                 name: "Jaffensa",
-                exchangeRate: 154.01,
+                deliveryFixed: 0.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
@@ -782,9 +825,9 @@
                             value: 0
                         }, // Restar 0%
                         operation2: {
-                            type: 'divide',
-                            value: 0.55
-                        } // Dividir por 0.55
+                            type: 'multiply',
+                            value: 1.40
+                        } // Multiplicar por 1.40
                     },
                     BS: {
                         operation1: {
@@ -797,11 +840,11 @@
                         } // Dividir por 0.55
                     }
                 },
-                notes: "Cálculo USD: (Monto - 23%) ÷ 0.63 | Cálculo BS: (Monto + 11%) × 1.44"
+                notes: "Cálculo USD: (Monto - 18%) × 1.35 | Cálculo BS: (Monto ÷ 0.77) + 14%"
             },
             proveedor13: {
-                name: "JD",
-                exchangeRate: 154.01,
+                name: "JD Velko",
+                deliveryFixed: 0.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
@@ -810,13 +853,13 @@
                         }, // Restar 0%
                         operation2: {
                             type: 'multiply',
-                            value: 1.30
-                        } // Multiplicar por 1.30
+                            value: 1
+                        } // Multiplicar por 0
                     },
                     BS: {
                         operation1: {
-                            type: 'add',
-                            value: 0
+                            type: 'subtract',
+                            value: 12.6
                         }, // Sumar 0%
                         operation2: {
                             type: 'multiply',
@@ -824,11 +867,11 @@
                         } // Multiplicar por 1.40
                     }
                 },
-                notes: "Cálculo USD: (Monto - 23%) ÷ 0.63 | Cálculo BS: (Monto + 11%) × 1.44"
+                notes: "Cálculo USD: (Monto - 18%) × 1.35 | Cálculo BS: (Monto ÷ 0.77) + 14%"
             },
             proveedor14: {
                 name: "Perfect",
-                exchangeRate: 154.01,
+                deliveryFixed: 0.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
@@ -837,7 +880,7 @@
                         }, // Restar 0%
                         operation2: {
                             type: 'divide',
-                            value: 0
+                            value: 1
                         } // Dividir por 0 (sin operación)
                     },
                     BS: {
@@ -847,21 +890,21 @@
                         }, // Sumar 0%
                         operation2: {
                             type: 'multiply',
-                            value: 0
+                            value: 1
                         } // Multiplicar por 0 (sin operación)
                     }
                 },
-                notes: "Cálculo USD: (Monto - 23%) ÷ 0.63 | Cálculo BS: (Monto + 11%) × 1.44"
+                notes: "Cálculo USD: (Monto - 18%) × 1.35 | Cálculo BS: (Monto ÷ 0.77) + 14%"
             },
             proveedor15: {
                 name: "Rodalven",
-                exchangeRate: 154.01,
+                deliveryFixed: 0.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
                             type: 'subtract',
-                            value: 25
-                        }, // Restar 25%
+                            value: 30
+                        }, // Restar 30%
                         operation2: {
                             type: 'multiply',
                             value: 1.40
@@ -870,7 +913,7 @@
                     BS: {
                         operation1: {
                             type: 'subtract',
-                            value: 25
+                            value: 30
                         }, // Restar 25%
                         operation2: {
                             type: 'divide',
@@ -878,11 +921,11 @@
                         } // Dividir por 0.55
                     }
                 },
-                notes: "Cálculo USD: (Monto - 23%) ÷ 0.63 | Cálculo BS: (Monto + 11%) × 1.44"
+                notes: "Cálculo USD: (Monto - 18%) × 1.35 | Cálculo BS: (Monto ÷ 0.77) + 14%"
             },
             proveedor16: {
                 name: "Sendai Motors",
-                exchangeRate: 154.01,
+                deliveryFixed: 5.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
@@ -905,16 +948,16 @@
                         } // Dividir por 0.55
                     }
                 },
-                notes: "Cálculo USD: (Monto - 23%) ÷ 0.63 | Cálculo BS: (Monto + 11%) × 1.44"
+                notes: "Cálculo USD: (Monto - 18%) × 1.35 | Cálculo BS: (Monto ÷ 0.77) + 14%"
             },
             proveedor17: {
                 name: "Suslanzca",
-                exchangeRate: 154.01,
+                deliveryFixed: 0.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
                             type: 'subtract',
-                            value: 0
+                            value: 30
                         }, // Restar 0%
                         operation2: {
                             type: 'multiply',
@@ -927,16 +970,16 @@
                             value: 0
                         }, // Sumar 0%
                         operation2: {
-                            type: 'divide',
-                            value: 0.55
-                        } // Dividir por 0.55
+                            type: 'multiply',
+                            value: 1.40
+                        } // Multiplicar por 1.40
                     }
                 },
-                notes: "Cálculo USD: (Monto - 23%) ÷ 0.63 | Cálculo BS: (Monto + 11%) × 1.44"
+                notes: "Cálculo USD: (Monto - 18%) × 1.35 | Cálculo BS: (Monto ÷ 0.77) + 14%"
             },
             proveedor18: {
                 name: "Trenden",
-                exchangeRate: 154.01,
+                deliveryFixed: 0.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
@@ -959,11 +1002,11 @@
                         } // Dividir por 0.55
                     }
                 },
-                notes: "Cálculo USD: (Monto - 23%) ÷ 0.63 | Cálculo BS: (Monto + 11%) × 1.44"
+                notes: "Cálculo USD: (Monto - 18%) × 1.35 | Cálculo BS: (Monto ÷ 0.77) + 14%"
             },
             proveedor19: {
                 name: "TVA Grupo 77",
-                exchangeRate: 154.01,
+                deliveryFixed: 0.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
@@ -986,11 +1029,11 @@
                         } // Dividir por 0.55
                     }
                 },
-                notes: "Cálculo USD: (Monto - 23%) ÷ 0.63 | Cálculo BS: (Monto + 11%) × 1.44"
+                notes: "Cálculo USD: (Monto - 18%) × 1.35 | Cálculo BS: (Monto ÷ 0.77) + 14%"
             },
             proveedor20: {
                 name: "Volker",
-                exchangeRate: 154.01,
+                deliveryFixed: 5.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
@@ -1013,14 +1056,67 @@
                         } // Dividir por 0.55
                     }
                 },
-                notes: "Cálculo USD: (Monto - 23%) ÷ 0.63 | Cálculo BS: (Monto + 11%) × 1.44"
-            }
+                notes: "Cálculo USD: (Monto - 18%) × 1.35 | Cálculo BS: (Monto ÷ 0.77) + 14%"
+            },
+            proveedor21: {
+                name: "Hanei Motors",
+                deliveryFixed: 5.00, // Delivery fijo en USD
+                conditions: {
+                    USD: {
+                        operation1: {
+                            type: 'subtract',
+                            value: 5
+                        }, // Restar 0%
+                        operation2: {
+                            type: 'multiply',
+                            value: 1.40
+                        } // Multiplicar por 1.40
+                    },
+                    BS: {
+                        operation1: {
+                            type: 'subtract',
+                            value: 5
+                        }, // Sumar 0%
+                        operation2: {
+                            type: 'divide',
+                            value: 0.55
+                        } // Dividir por 0.55
+                    }
+                },
+                notes: "Cálculo USD: (Monto - 18%) × 1.35 | Cálculo BS: (Monto ÷ 0.77) + 14%"
+            },
+            proveedor22: {
+                name: "Garcoli",
+                deliveryFixed: 5.00, // Delivery fijo en USD
+                conditions: {
+                    USD: {
+                        operation1: {
+                            type: 'subtract',
+                            value: 0
+                        }, // Restar 0%
+                        operation2: {
+                            type: 'multiply',
+                            value: 1.40
+                        } // Multiplicar por 1.40
+                    },
+                    BS: {
+                        operation1: {
+                            type: 'add',
+                            value: 0
+                        }, // Sumar 0%
+                        operation2: {
+                            type: 'divide',
+                            value: 0.55
+                        } // Dividir por 0.55
+                    }
+                },
+                notes: "Cálculo USD: (Monto - 18%) × 1.35 | Cálculo BS: (Monto ÷ 0.77) + 14%"
+            },
         };
 
         let currentCurrency = 'USD';
         let currentProvider = null;
         let baseAmountUSD = 0;
-        let deliveryAmountUSD = 0;
 
         // Elementos del DOM
         const providerSelect = document.getElementById('providerSelect');
@@ -1037,11 +1133,39 @@
         const updateTime = document.getElementById('updateTime');
         const currencyIndicator = document.getElementById('currencyIndicator');
         const deliveryCurrencyIndicator = document.getElementById('deliveryCurrencyIndicator');
+        const referencePrice = document.getElementById('referencePrice');
+        const referencePriceValue = document.getElementById('referencePriceValue');
+        const exchangeRateDisplay = document.getElementById('exchangeRateDisplay');
 
         // Event listeners
-        providerSelect.addEventListener('change', calculatePrice);
+        providerSelect.addEventListener('change', handleProviderChange);
         amountInput.addEventListener('input', handleAmountInput);
-        deliveryInput.addEventListener('input', handleDeliveryInput);
+
+        function handleProviderChange() {
+            const providerId = providerSelect.value;
+            if (providerId) {
+                currentProvider = providerConfig[providerId];
+                updateDeliveryDisplay();
+                calculatePrice();
+            } else {
+                currentProvider = null;
+                results.style.display = 'none';
+                deliveryInput.value = '';
+            }
+        }
+
+        function handleAmountInput() {
+            const amount = parseFloat(amountInput.value) || 0;
+
+            if (currentCurrency === 'USD') {
+                baseAmountUSD = amount;
+            } else {
+                // Convertir de BS a USD para almacenar
+                baseAmountUSD = amount / GLOBAL_EXCHANGE_RATE;
+            }
+
+            calculatePrice();
+        }
 
         function setCurrency(currency) {
             currentCurrency = currency;
@@ -1053,57 +1177,49 @@
             // Actualizar indicadores
             if (currency === 'USD') {
                 currencyIndicator.textContent = 'Ingrese el monto en USD ($)';
-                deliveryCurrencyIndicator.textContent = 'Ingrese el delivery en USD ($)';
+                deliveryCurrencyIndicator.textContent = 'Delivery fijo del proveedor en USD';
                 amountInput.placeholder = '0.00';
-                deliveryInput.placeholder = '0.00';
+                // Ocultar cuadro de referencia en USD
+                referencePrice.style.display = 'none';
             } else {
                 currencyIndicator.textContent = 'Ingrese el monto en Bolívares (Bs)';
-                deliveryCurrencyIndicator.textContent = 'Ingrese el delivery en Bolívares (Bs)';
+                deliveryCurrencyIndicator.textContent = 'Delivery fijo del proveedor en Bs';
                 amountInput.placeholder = '0.00';
-                deliveryInput.placeholder = '0.00';
+                // Mostrar cuadro de referencia en BS si hay cálculos
+                if (currentProvider && baseAmountUSD > 0) {
+                    referencePrice.style.display = 'block';
+                }
             }
 
             updateDisplayValues();
-            calculatePrice();
-        }
-
-        function handleAmountInput() {
-            const amount = parseFloat(amountInput.value) || 0;
-
-            if (currentCurrency === 'USD') {
-                baseAmountUSD = amount;
-            } else {
-                // Convertir de BS a USD para almacenar
-                baseAmountUSD = currentProvider ? amount / currentProvider.exchangeRate : 0;
-            }
-
-            calculatePrice();
-        }
-
-        function handleDeliveryInput() {
-            const delivery = parseFloat(deliveryInput.value) || 0;
-
-            if (currentCurrency === 'USD') {
-                deliveryAmountUSD = delivery;
-            } else {
-                // Convertir de BS a USD para almacenar
-                deliveryAmountUSD = currentProvider ? delivery / currentProvider.exchangeRate : 0;
-            }
-
+            updateDeliveryDisplay();
             calculatePrice();
         }
 
         function updateDisplayValues() {
-            if (!currentProvider) return;
+            if (!currentProvider || baseAmountUSD <= 0) return;
 
             if (currentCurrency === 'USD') {
-                amountInput.value = baseAmountUSD > 0 ? baseAmountUSD.toFixed(2) : '';
-                deliveryInput.value = deliveryAmountUSD > 0 ? deliveryAmountUSD.toFixed(2) : '';
+                amountInput.value = baseAmountUSD.toFixed(2);
             } else {
-                const baseBS = baseAmountUSD * currentProvider.exchangeRate;
-                const deliveryBS = deliveryAmountUSD * currentProvider.exchangeRate;
-                amountInput.value = baseAmountUSD > 0 ? baseBS.toFixed(2) : '';
-                deliveryInput.value = deliveryAmountUSD > 0 ? deliveryBS.toFixed(2) : '';
+                const baseBS = baseAmountUSD * GLOBAL_EXCHANGE_RATE;
+                amountInput.value = baseBS.toFixed(2);
+            }
+        }
+
+        function updateDeliveryDisplay() {
+            if (!currentProvider) {
+                deliveryInput.value = '';
+                return;
+            }
+
+            const deliveryUSD = currentProvider.deliveryFixed;
+
+            if (currentCurrency === 'USD') {
+                deliveryInput.value = `$${deliveryUSD.toFixed(2)}`;
+            } else {
+                const deliveryBS = deliveryUSD * GLOBAL_EXCHANGE_RATE;
+                deliveryInput.value = `Bs ${deliveryBS.toFixed(2)}`;
             }
         }
 
@@ -1138,14 +1254,11 @@
         }
 
         function calculatePrice() {
-            const providerId = providerSelect.value;
-
-            if (!providerId || baseAmountUSD <= 0) {
+            if (!currentProvider || baseAmountUSD <= 0) {
                 results.style.display = 'none';
                 return;
             }
 
-            currentProvider = providerConfig[providerId];
             const conditions = currentProvider.conditions[currentCurrency];
 
             // Aplicar operaciones según la condición del proveedor
@@ -1153,12 +1266,15 @@
             processedAmount = applyOperation(processedAmount, conditions.operation1);
             processedAmount = applyOperation(processedAmount, conditions.operation2);
 
+            // El delivery siempre viene del proveedor (fijo)
+            const deliveryAmountUSD = currentProvider.deliveryFixed;
+
             // Formatear valores según la moneda actual
             const formatCurrency = (value, showSymbol = true) => {
                 if (currentCurrency === 'USD') {
                     return showSymbol ? `$${value.toFixed(2)}` : value.toFixed(2);
                 } else {
-                    const bsValue = value * currentProvider.exchangeRate;
+                    const bsValue = value * GLOBAL_EXCHANGE_RATE;
                     return showSymbol ? `Bs ${bsValue.toFixed(2)}` : bsValue.toFixed(2);
                 }
             };
@@ -1177,6 +1293,15 @@
             const op2Text = getOperationText(conditions.operation2);
             calculationBreakdown.textContent = `Cálculo ${currentCurrency}: Monto base ${op1Text} ${op2Text}`;
 
+            // Mostrar precio de referencia en USD solo en sección Bolívares
+            if (currentCurrency === 'BS') {
+                referencePriceValue.textContent = `$${totalPrice.toFixed(2)}`;
+                exchangeRateDisplay.textContent = GLOBAL_EXCHANGE_RATE;
+                referencePrice.style.display = 'block';
+            } else {
+                referencePrice.style.display = 'none';
+            }
+
             // Información del proveedor
             providerInfo.textContent = currentProvider.notes;
 
@@ -1185,18 +1310,17 @@
 
             // Actualizar timestamp
             updateTime.textContent =
-                `Actualizado: ${new Date().toLocaleString('es-VE')} | Tasa: ${currentProvider.exchangeRate}`;
+                `Actualizado: ${new Date().toLocaleString('es-VE')} | Tasa Global: ${GLOBAL_EXCHANGE_RATE}`;
         }
 
         // Inicializar
-        updateTime.textContent = `Actualizado: ${new Date().toLocaleString('es-VE')}`;
+        updateTime.textContent =
+        `Actualizado: ${new Date().toLocaleString('es-VE')} | Tasa Global: ${GLOBAL_EXCHANGE_RATE}`;
 
         // Auto-actualización cada 30 segundos
         setInterval(() => {
-            if (currentProvider) {
-                updateTime.textContent =
-                    `Actualizado: ${new Date().toLocaleString('es-VE')} | Tasa: ${currentProvider.exchangeRate}`;
-            }
+            updateTime.textContent =
+                `Actualizado: ${new Date().toLocaleString('es-VE')} | Tasa Global: ${GLOBAL_EXCHANGE_RATE}`;
         }, 30000);
     </script>
 

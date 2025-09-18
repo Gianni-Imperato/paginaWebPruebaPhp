@@ -86,6 +86,7 @@
               <li><a href="{{Route('SuperSuspension.index')}}">Super Suspensión</a></li>
               <li><a href="{{Route('SuperEstrella.index')}}">Super Estrella</a></li>
               <li><a href="{{Route('SuperRepuestos1212.index')}}">Super Repuestos1212</a></li>
+              <li><a href="{{Route('SuperCalculadora.index')}}">Super Calculadora</a></li>
 
             </ul>
           </li>
@@ -278,11 +279,11 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaRepuestos1212/imagenTiendaRepuestos12126.jpeg')}}" class="img-fluid" alt="Todo para tus vehiculos Jeep y Ford, cotiza con nosotros">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaRepuestos1212/imagenTiendaRepuestos12127.jpeg')}}" class="img-fluid" alt="Todo para tus vehiculos Jeep y Ford, cotiza con nosotros">
               <div class="portfolio-info">
                 <h4>Todo para tus vehiculos Jeep y Ford, cotiza con nosotros</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo Jeep y Ford, tambien somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaRepuestos1212/imagenTiendaRepuestos12126.jpeg')}}" title="Somos especialistas en repuestos Jeep, Ford y multimarca, todo para tu vehiculo"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaRepuestos1212/imagenTiendaRepuestos12127.jpeg')}}" title="Somos especialistas en repuestos Jeep, Ford y multimarca, todo para tu vehiculo"
                   data-gallery="portfolio-gallery-repuestos1212" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i
@@ -304,11 +305,11 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaRepuestos1212/imagenProductoRepuestos12123.jpeg')}}" class="img-fluid" alt="Somos multimarcas, tenemos todo tipo de repuestos y marcas para nuestros clientes">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaRepuestos1212/imagenTiendaRepuestos12129.jpeg')}}" class="img-fluid" alt="Somos multimarcas, tenemos todo tipo de repuestos y marcas para nuestros clientes">
               <div class="portfolio-info">
                 <h4>Somos multimarcas, tenemos todo tipo de repuestos y marcas para nuestros clientes</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo Jeep y Ford, tambien somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaRepuestos1212/imagenProductoRepuestos12123.jpeg')}}" title="Somos especialistas en repuestos Jeep, Ford y multimarca, todo para tu vehiculo"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaRepuestos1212/imagenTiendaRepuestos12129.jpeg')}}" title="Somos especialistas en repuestos Jeep, Ford y multimarca, todo para tu vehiculo"
                   data-gallery="portfolio-gallery-repuestos1212" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i

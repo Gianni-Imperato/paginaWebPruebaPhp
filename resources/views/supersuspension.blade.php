@@ -86,6 +86,7 @@
               <li><a href="{{Route('SuperSuspension.index')}}">Super Suspensión</a></li>
               <li><a href="{{Route('SuperEstrella.index')}}">Super Estrella</a></li>
               <li><a href="{{Route('SuperRepuestos1212.index')}}">Super Repuestos1212</a></li>
+              <li><a href="{{Route('SuperCalculadora.index')}}">Super Calculadora</a></li>
 
             </ul>
           </li>
@@ -293,11 +294,11 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaSuspension/imagenProductoSuspension5.jpeg')}}" class="img-fluid" alt="Mesetas Superiores, Jeep Cherookee 4G">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaSuspension/imagenProductoSuspension5_.jpeg')}}" class="img-fluid" alt="Mesetas Superiores, Jeep Cherookee 4G">
               <div class="portfolio-info">
-                <h4>Todo tipo de gomas para tu vehiculo, visitanos o cotiza con nuestros asesores de ventas</h4>
+                <h4>Todo tipo de repuestos Chevrolet para tu vehiculo, visitanos o cotiza con nuestros asesores de ventas</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo, Suspensiones y Tren Delanteros, tambien somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaSuspension/imagenProductoSuspension5.jpeg')}}" title="Somos especialistas en Suspensiones y Tren Delanteros, tambien multimarca, todo para tu vehiculo"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaSuspension/imagenProductoSuspension5_.jpeg')}}" title="Somos especialistas en Suspensiones y Tren Delanteros, tambien multimarca, todo para tu vehiculo"
                   data-gallery="portfolio-gallery-suspension" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>

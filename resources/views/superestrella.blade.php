@@ -86,6 +86,7 @@
               <li><a href="{{Route('SuperSuspension.index')}}">Super Suspensión</a></li>
               <li><a href="{{Route('SuperEstrella.index')}}">Super Estrella</a></li>
               <li><a href="{{Route('SuperRepuestos1212.index')}}">Super Repuestos1212</a></li>
+              <li><a href="{{Route('SuperCalculadora.index')}}">Super Calculadora</a></li>
 
             </ul>
           </li>
@@ -267,11 +268,11 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella4.jpeg')}}" class="img-fluid" alt="Somos especialistas en Fiat y Renault">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella1.jpeg')}}" class="img-fluid" alt="Somos especialistas en Fiat y Renault">
               <div class="portfolio-info">
                 <h4>Somos especialistas en Fiat y Renault</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo Fiat, Volkswagen y Renault, tambien somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella4.jpeg')}}" title="Somos multimarcas, gran variedad de repuestos"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella1.jpeg')}}" title="Somos multimarcas, gran variedad de repuestos"
                   data-gallery="portfolio-gallery-estrella" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i
@@ -280,11 +281,11 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella5.jpeg')}}" class="img-fluid" alt="Delivery a toda la Gran Caracas y nivel nacional">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella2.jpeg')}}" class="img-fluid" alt="Delivery a toda la Gran Caracas y nivel nacional">
               <div class="portfolio-info">
                 <h4>Delivery a toda la Gran Caracas y nivel nacional</h4>
                 <p>Tenemos delivery de todo tipo de repuestos para tu vehiculo Fiat, Volkswagen y Renault, tambien somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p></p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella5.jpeg')}}" title="Somos multimarcas, gran variedad de repuestos"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella2.jpeg')}}" title="Somos multimarcas, gran variedad de repuestos"
                   data-gallery="portfolio-gallery-estrella" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i
@@ -293,11 +294,11 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella2.jpeg')}}" class="img-fluid" alt="Somos multimarcas, gran variedad de repuestos">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella33.jpeg')}}" class="img-fluid" alt="Somos multimarcas, gran variedad de repuestos">
               <div class="portfolio-info">
                 <h4>Somos multimarcas, gran variedad de repuestos</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo Fiat, Volkswagen y Renault, tambien somos multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza ahora!</p></p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella2.jpeg')}}" title="Somos multimarcas, gran variedad de repuestos"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella33.jpeg')}}" title="Somos multimarcas, gran variedad de repuestos"
                   data-gallery="portfolio-gallery-estrella" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i
@@ -404,6 +405,20 @@
                 <div class="video-wrapper">
                   <video controls preload="metadata">
                     <source src="{{asset('assets/images/videosTiendas/videosTiendaEstrella/promocionEstrella3.mp4')}}"
+                      type="video/mp4"> Tu navegador no soporta el elemento de video.
+                  </video>
+                </div>
+                <h3>Variedad de productos</h3>
+                <p>Descubre cómo nuestros repuestos originales mejoran el rendimiento de tu vehículo.</p>
+              </div>
+            </div><!-- End Video Item -->
+
+            <!-- Video 4 -->
+            <div class="swiper-slide">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  <video controls preload="metadata">
+                    <source src="{{asset('assets/images/videosTiendas/videosTiendaEstrella/promocionEstrella4.mp4')}}"
                       type="video/mp4"> Tu navegador no soporta el elemento de video.
                   </video>
                 </div>
