@@ -423,28 +423,22 @@
             <label class="input-label">Seleccionar Proveedor</label>
             <select class="provider-select" id="providerSelect">
                 <option value="">Seleccione un proveedor...</option>
-                <option value="proveedor1">Asiamerica</option>
-                <option value="proveedor2">Autopartes</option>
-                <option value="proveedor3">Bravo Import</option>
-                <option value="proveedor4">Chino 1</option>
-                <option value="proveedor5">Chino 2</option>
-                <option value="proveedor6">Chino 3</option>
-                <option value="proveedor7">Comercial 88</option>
-                <option value="proveedor8">EDS</option>
-                <option value="proveedor9">Excelso</option>
-                <option value="proveedor10">Gran Import</option>
-                <option value="proveedor11">Italven</option>
-                <option value="proveedor12">Jaffensa</option>
-                <option value="proveedor13">JD Velko</option>
-                <option value="proveedor14">Perfect</option>
-                <option value="proveedor15">Rodalven</option>
-                <option value="proveedor16">Sendai Motors</option>
-                <option value="proveedor17">Suslanzca</option>
-                <option value="proveedor18">Trenden</option>
-                <option value="proveedor19">TVA Grupo 77</option>
-                <option value="proveedor20">Volker</option>
-                <option value="proveedor21">Hanei Motors</option>
-                <option value="proveedor22">Garcoli</option>
+                <option value="proveedor1">Ancov</option>
+                <option value="proveedor2">Asiamerica</option>
+                <option value="proveedor3">Autopartes</option>
+                <option value="proveedor4">Basesmotor</option>
+                <option value="proveedor5">Bravo Import</option>
+                <option value="proveedor6">Chino 1</option>
+                <option value="proveedor7">Chino 2</option>
+                <option value="proveedor8">Chino 3</option>
+                <option value="proveedor9">Epic</option>
+                <option value="proveedor10">Ford Rusmorus</option>
+                <option value="proveedor11">Hanei Motors</option>
+                <option value="proveedor12">Italven</option>
+                <option value="proveedor13">Jeep Rusmorus</option>
+                <option value="proveedor14">Sendai Motors</option>
+                <option value="proveedor15">TVA Grupo 77</option>
+                <option value="proveedor16">Volker</option>
             </select>
         </div>
 
@@ -514,12 +508,12 @@
         // TASA DE CAMBIO CENTRALIZADA
         // Solo cambiar aquí para actualizar toda la calculadora
         // ==========================================
-        const GLOBAL_EXCHANGE_RATE = 163.65; // ← CAMBIAR SOLO AQUÍ DIARIAMENTE
+        const GLOBAL_EXCHANGE_RATE = 218.17; // ← CAMBIAR SOLO AQUÍ DIARIAMENTE
 
         // Configuración de proveedores con condiciones duales USD/BS
         const providerConfig = {
             proveedor1: {
-                name: "Asiamerica",
+                name: "Ancov",
                 deliveryFixed: 0.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
@@ -539,21 +533,21 @@
                         }, // Sumar 0%
                         operation2: {
                             type: 'divide',
-                            value: 0.55
-                        } // Dividir por 0.55
+                            value: 0.40
+                        } // Dividir por 0.40
                     }
                 },
-                notes: "Cálculo USD: (Monto - 36%) × 1.40 | Cálculo BS: (Monto - 36%) ÷ 0.55"
+                notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología.",
             },
             proveedor2: {
-                name: "Autopartes",
+                name: "Asiamerica",
                 deliveryFixed: 3.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
                             type: 'subtract',
-                            value: 35
-                        }, // Restar 35%
+                            value: 0
+                        }, // Restar 0%
                         operation2: {
                             type: 'multiply',
                             value: 1.40
@@ -562,17 +556,71 @@
                     BS: {
                         operation1: {
                             type: 'subtract',
-                            value: 35
-                        }, // Restar 35%
+                            value: 0
+                        }, // Restar 0%
                         operation2: {
                             type: 'divide',
-                            value: 0.55
-                        } // Dividir por 0.55
+                            value: 0.49
+                        } // Dividir por 0.49
                     }
                 },
-                notes: "Cálculo USD: (Monto + 15%) ÷ 0.60 | Cálculo BS: (Monto - 25%) × 1.35"
+                notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología."
             },
             proveedor3: {
+                name: "Autopartes",
+                deliveryFixed: 3.00, // Delivery fijo en USD
+                conditions: {
+                    USD: {
+                        operation1: {
+                            type: 'subtract',
+                            value: 0
+                        }, // Restar 0%
+                        operation2: {
+                            type: 'divide',
+                            value: 0.50
+                        } // Dividir por 0.50
+                    },
+                    BS: {
+                        operation1: {
+                            type: 'add',
+                            value: 0
+                        }, // Sumar 0%
+                        operation2: {
+                            type: 'divide',
+                            value: 0.50
+                        } // Dividir por 0.50
+                    }
+                },
+                notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología."
+            },
+            proveedor4: {
+                name: "Basesmotor",
+                deliveryFixed: 0.00, // Delivery fijo en USD
+                conditions: {
+                    USD: {
+                        operation1: {
+                            type: 'subtract',
+                            value: 0
+                        }, // Restar 0%
+                        operation2: {
+                            type: 'multiply',
+                            value: 1.40
+                        } // Multiplicar por 1.40
+                    },
+                    BS: {
+                        operation1: {
+                            type: 'subtract',
+                            value: 0
+                        }, // Restar 0%
+                        operation2: {
+                            type: 'divide',
+                            value: 0.42
+                        } // Dividir por 0.42
+                    }
+                },
+                notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología."
+            },
+            proveedor5: {
                 name: "Bravo Import",
                 deliveryFixed: 0.00, // Delivery fijo en USD
                 conditions: {
@@ -597,17 +645,17 @@
                         } // Multiplicar por 1.50
                     }
                 },
-                notes: "Cálculo USD: (Monto × 1.20) - 10% | Cálculo BS: (Monto + 12%) ÷ 0.65"
+                notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología."
             },
-            proveedor4: {
+            proveedor6: {
                 name: "Chino 1",
                 deliveryFixed: 0.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
                             type: 'subtract',
-                            value: 36
-                        }, // Restar 36%
+                            value: 10
+                        }, // Restar 10%
                         operation2: {
                             type: 'multiply',
                             value: 1.40
@@ -616,17 +664,17 @@
                     BS: {
                         operation1: {
                             type: 'subtract',
-                            value: 36
-                        }, // Restar 36%
+                            value: 10
+                        }, // Restar 10%
                         operation2: {
                             type: 'divide',
                             value: 0.55
                         } // Dividir por 0.55
                     }
                 },
-                notes: "Cálculo USD: (Monto ÷ 0.75) + 8% | Cálculo BS: (Monto - 28%) × 1.38"
+                notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología."
             },
-            proveedor5: {
+            proveedor7: {
                 name: "Chino 2",
                 deliveryFixed: 0.00, // Delivery fijo en USD
                 conditions: {
@@ -647,13 +695,13 @@
                         }, // Sumar 0%
                         operation2: {
                             type: 'divide',
-                            value: 0.55
-                        } // Dividir por 0.55
+                            value: 0.42
+                        } // Dividir por 0.42
                     }
                 },
-                notes: "Cálculo USD: (Monto + 20%) × 0.85 | Cálculo BS: (Monto ÷ 0.80) - 5%"
+                notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología."
             },
-            proveedor6: {
+            proveedor8: {
                 name: "Chino 3",
                 deliveryFixed: 0.00, // Delivery fijo en USD
                 conditions: {
@@ -674,122 +722,14 @@
                         }, // Sumar 0%
                         operation2: {
                             type: 'divide',
-                            value: 0.55
-                        } // Dividir por 0.55
+                            value: 0.42
+                        } // Dividir por 0.42
                     }
                 },
-                notes: "Cálculo USD: (Monto - 30%) ÷ 0.55 | Cálculo BS: (Monto × 1.15) + 18%"
-            },
-            proveedor7: {
-                name: "Comercial 88",
-                deliveryFixed: 0.00, // Delivery fijo en USD
-                conditions: {
-                    USD: {
-                        operation1: {
-                            type: 'subtract',
-                            value: 30
-                        }, // Restar 30%
-                        operation2: {
-                            type: 'multiply',
-                            value: 1.40
-                        } // Multiplicar por 1.40
-                    },
-                    BS: {
-                        operation1: {
-                            type: 'add',
-                            value: 0
-                        }, // Sumar 0%
-                        operation2: {
-                            type: 'divide',
-                            value: 0.55
-                        } // Dividir por 0.55
-                    }
-                },
-                notes: "Cálculo USD: (Monto × 1.25) - 15% | Cálculo BS: (Monto + 22%) ÷ 0.68"
-            },
-            proveedor8: {
-                name: "EDS",
-                deliveryFixed: 0.00, // Delivery fijo en USD
-                conditions: {
-                    USD: {
-                        operation1: {
-                            type: 'subtract',
-                            value: 0
-                        }, // Restar 0%
-                        operation2: {
-                            type: 'divide',
-                            value: 0.55
-                        } // Dividir por 0.55
-                    },
-                    BS: {
-                        operation1: {
-                            type: 'add',
-                            value: 0
-                        }, // Sumar 0%
-                        operation2: {
-                            type: 'divide',
-                            value: 0.55
-                        } // Dividir por 0.55
-                    }
-                },
-                notes: "Cálculo USD: (Monto ÷ 0.70) × 1.10 | Cálculo BS: (Monto - 32%) + 25%"
+                notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología."
             },
             proveedor9: {
-                name: "Excelso",
-                deliveryFixed: 0.00, // Delivery fijo en USD
-                conditions: {
-                    USD: {
-                        operation1: {
-                            type: 'subtract',
-                            value: 0
-                        }, // Restar 0%
-                        operation2: {
-                            type: 'multiply',
-                            value: 1.40
-                        } // Multiplicar por 1.40
-                    },
-                    BS: {
-                        operation1: {
-                            type: 'add',
-                            value: 0
-                        }, // Sumar 0%
-                        operation2: {
-                            type: 'divide',
-                            value: 0.55
-                        } // Dividir por 0.55
-                    }
-                },
-                notes: "Cálculo USD: (Monto + 12%) ÷ 0.72 | Cálculo BS: (Monto × 1.30) - 20%"
-            },
-            proveedor10: {
-                name: "Gran Import",
-                deliveryFixed: 5.00, // Delivery fijo en USD
-                conditions: {
-                    USD: {
-                        operation1: {
-                            type: 'subtract',
-                            value: 0
-                        }, // Restar 0%
-                        operation2: {
-                            type: 'multiply',
-                            value: 1.40
-                        } // Multiplicar por 1.40
-                    },
-                    BS: {
-                        operation1: {
-                            type: 'add',
-                            value: 0
-                        }, // Sumar 0%
-                        operation2: {
-                            type: 'divide',
-                            value: 0.55
-                        } // Dividir por 0.55
-                    }
-                },
-                notes: "Cálculo USD: (Monto - 18%) × 1.35 | Cálculo BS: (Monto ÷ 0.77) + 14%"
-            },
-            proveedor11: {
-                name: "Italven",
+                name: "Epic",
                 deliveryFixed: 3.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
@@ -799,33 +739,6 @@
                         }, // Restar 0%
                         operation2: {
                             type: 'multiply',
-                            value: 1.46
-                        } // Multiplicar por 1.46
-                    },
-                    BS: {
-                        operation1: {
-                            type: 'add',
-                            value: 0
-                        }, // Sumar 0%
-                        operation2: {
-                            type: 'multiply',
-                            value: 1.86
-                        } // Multiplicar por 1.86
-                    }
-                },
-                notes: "Cálculo USD: (Monto - 18%) × 1.35 | Cálculo BS: (Monto ÷ 0.77) + 14%"
-            },
-            proveedor12: {
-                name: "Jaffensa",
-                deliveryFixed: 0.00, // Delivery fijo en USD
-                conditions: {
-                    USD: {
-                        operation1: {
-                            type: 'subtract',
-                            value: 0
-                        }, // Restar 0%
-                        operation2: {
-                            type: 'multiply',
                             value: 1.40
                         } // Multiplicar por 1.40
                     },
@@ -836,236 +749,47 @@
                         }, // Sumar 0%
                         operation2: {
                             type: 'divide',
-                            value: 0.55
-                        } // Dividir por 0.55
+                            value: 0.42
+                        } // Dividir por 0.42
                     }
                 },
-                notes: "Cálculo USD: (Monto - 18%) × 1.35 | Cálculo BS: (Monto ÷ 0.77) + 14%"
+                notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología."
             },
-            proveedor13: {
-                name: "JD Velko",
+            proveedor10: {
+                name: "Ford Rusmorus",
                 deliveryFixed: 0.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
                             type: 'subtract',
-                            value: 0
-                        }, // Restar 0%
-                        operation2: {
-                            type: 'multiply',
-                            value: 1
-                        } // Multiplicar por 0
-                    },
-                    BS: {
-                        operation1: {
-                            type: 'subtract',
-                            value: 12.6
-                        }, // Sumar 0%
+                            value: 50.65
+                        }, // Restar 50.50%
                         operation2: {
                             type: 'multiply',
                             value: 1.40
                         } // Multiplicar por 1.40
-                    }
-                },
-                notes: "Cálculo USD: (Monto - 18%) × 1.35 | Cálculo BS: (Monto ÷ 0.77) + 14%"
-            },
-            proveedor14: {
-                name: "Perfect",
-                deliveryFixed: 0.00, // Delivery fijo en USD
-                conditions: {
-                    USD: {
+                    },
+                    BS: {
                         operation1: {
                             type: 'subtract',
-                            value: 0
-                        }, // Restar 0%
+                            value: 50.65
+                        }, // Restar 50.50%
                         operation2: {
                             type: 'divide',
-                            value: 1
-                        } // Dividir por 0 (sin operación)
-                    },
-                    BS: {
-                        operation1: {
-                            type: 'add',
-                            value: 0
-                        }, // Sumar 0%
-                        operation2: {
-                            type: 'multiply',
-                            value: 1
-                        } // Multiplicar por 0 (sin operación)
+                            value: 0.42
+                        } // Dividir por 0.42
                     }
                 },
-                notes: "Cálculo USD: (Monto - 18%) × 1.35 | Cálculo BS: (Monto ÷ 0.77) + 14%"
+                notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología."
             },
-            proveedor15: {
-                name: "Rodalven",
-                deliveryFixed: 0.00, // Delivery fijo en USD
-                conditions: {
-                    USD: {
-                        operation1: {
-                            type: 'subtract',
-                            value: 30
-                        }, // Restar 30%
-                        operation2: {
-                            type: 'multiply',
-                            value: 1.40
-                        } // Multiplicar por 1.40
-                    },
-                    BS: {
-                        operation1: {
-                            type: 'subtract',
-                            value: 30
-                        }, // Restar 25%
-                        operation2: {
-                            type: 'divide',
-                            value: 0.55
-                        } // Dividir por 0.55
-                    }
-                },
-                notes: "Cálculo USD: (Monto - 18%) × 1.35 | Cálculo BS: (Monto ÷ 0.77) + 14%"
-            },
-            proveedor16: {
-                name: "Sendai Motors",
-                deliveryFixed: 5.00, // Delivery fijo en USD
-                conditions: {
-                    USD: {
-                        operation1: {
-                            type: 'subtract',
-                            value: 0
-                        }, // Restar 0%
-                        operation2: {
-                            type: 'multiply',
-                            value: 1.40
-                        } // Multiplicar por 1.40
-                    },
-                    BS: {
-                        operation1: {
-                            type: 'add',
-                            value: 0
-                        }, // Sumar 0%
-                        operation2: {
-                            type: 'divide',
-                            value: 0.55
-                        } // Dividir por 0.55
-                    }
-                },
-                notes: "Cálculo USD: (Monto - 18%) × 1.35 | Cálculo BS: (Monto ÷ 0.77) + 14%"
-            },
-            proveedor17: {
-                name: "Suslanzca",
-                deliveryFixed: 0.00, // Delivery fijo en USD
-                conditions: {
-                    USD: {
-                        operation1: {
-                            type: 'subtract',
-                            value: 30
-                        }, // Restar 0%
-                        operation2: {
-                            type: 'multiply',
-                            value: 1.40
-                        } // Multiplicar por 1.40
-                    },
-                    BS: {
-                        operation1: {
-                            type: 'add',
-                            value: 0
-                        }, // Sumar 0%
-                        operation2: {
-                            type: 'multiply',
-                            value: 1.40
-                        } // Multiplicar por 1.40
-                    }
-                },
-                notes: "Cálculo USD: (Monto - 18%) × 1.35 | Cálculo BS: (Monto ÷ 0.77) + 14%"
-            },
-            proveedor18: {
-                name: "Trenden",
-                deliveryFixed: 0.00, // Delivery fijo en USD
-                conditions: {
-                    USD: {
-                        operation1: {
-                            type: 'subtract',
-                            value: 0
-                        }, // Restar 0%
-                        operation2: {
-                            type: 'multiply',
-                            value: 1.40
-                        } // Multiplicar por 1.40
-                    },
-                    BS: {
-                        operation1: {
-                            type: 'add',
-                            value: 0
-                        }, // Sumar 0%
-                        operation2: {
-                            type: 'divide',
-                            value: 0.55
-                        } // Dividir por 0.55
-                    }
-                },
-                notes: "Cálculo USD: (Monto - 18%) × 1.35 | Cálculo BS: (Monto ÷ 0.77) + 14%"
-            },
-            proveedor19: {
-                name: "TVA Grupo 77",
-                deliveryFixed: 0.00, // Delivery fijo en USD
-                conditions: {
-                    USD: {
-                        operation1: {
-                            type: 'subtract',
-                            value: 60
-                        }, // Restar 60%
-                        operation2: {
-                            type: 'multiply',
-                            value: 1.40
-                        } // Multiplicar por 1.40
-                    },
-                    BS: {
-                        operation1: {
-                            type: 'subtract',
-                            value: 60
-                        }, // Restar 60%
-                        operation2: {
-                            type: 'divide',
-                            value: 0.55
-                        } // Dividir por 0.55
-                    }
-                },
-                notes: "Cálculo USD: (Monto - 18%) × 1.35 | Cálculo BS: (Monto ÷ 0.77) + 14%"
-            },
-            proveedor20: {
-                name: "Volker",
-                deliveryFixed: 5.00, // Delivery fijo en USD
-                conditions: {
-                    USD: {
-                        operation1: {
-                            type: 'subtract',
-                            value: 0
-                        }, // Restar 0%
-                        operation2: {
-                            type: 'multiply',
-                            value: 1.40
-                        } // Multiplicar por 1.40
-                    },
-                    BS: {
-                        operation1: {
-                            type: 'add',
-                            value: 0
-                        }, // Sumar 0%
-                        operation2: {
-                            type: 'divide',
-                            value: 0.55
-                        } // Dividir por 0.55
-                    }
-                },
-                notes: "Cálculo USD: (Monto - 18%) × 1.35 | Cálculo BS: (Monto ÷ 0.77) + 14%"
-            },
-            proveedor21: {
+            proveedor11: {
                 name: "Hanei Motors",
                 deliveryFixed: 5.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
                             type: 'subtract',
-                            value: 5
+                            value: 0
                         }, // Restar 0%
                         operation2: {
                             type: 'multiply',
@@ -1074,20 +798,74 @@
                     },
                     BS: {
                         operation1: {
-                            type: 'subtract',
-                            value: 5
+                            type: 'add',
+                            value: 0
                         }, // Sumar 0%
                         operation2: {
                             type: 'divide',
-                            value: 0.55
-                        } // Dividir por 0.55
+                            value: 0.49
+                        } // Dividir por 0.49
                     }
                 },
-                notes: "Cálculo USD: (Monto - 18%) × 1.35 | Cálculo BS: (Monto ÷ 0.77) + 14%"
+                notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología."
             },
-            proveedor22: {
-                name: "Garcoli",
-                deliveryFixed: 5.00, // Delivery fijo en USD
+            proveedor12: {
+                name: "Italven",
+                deliveryFixed: 3.00, // Delivery fijo en USD
+                conditions: {
+                    USD: {
+                        operation1: {
+                            type: 'add',
+                            value: 116
+                        }, // Restar 116%
+                        operation2: {
+                            type: 'multiply',
+                            value: 1
+                        } // Multiplicar por 1
+                    },
+                    BS: {
+                        operation1: {
+                            type: 'add',
+                            value: 116
+                        }, // Sumar 116%
+                        operation2: {
+                            type: 'multiply',
+                            value: 1
+                        } // Multiplicar por 1
+                    }
+                },
+                notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología."
+            },
+            proveedor13: {
+                name: "Jeep Rusmorus",
+                deliveryFixed: 0.00, // Delivery fijo en USD
+                conditions: {
+                    USD: {
+                        operation1: {
+                            type: 'subtract',
+                            value: 50.65
+                        }, // Restar 50.50%
+                        operation2: {
+                            type: 'multiply',
+                            value: 1.40
+                        } // Multiplicar por 1.40
+                    },
+                    BS: {
+                        operation1: {
+                            type: 'subtract',
+                            value: 50.65
+                        }, // Restar 50.50%
+                        operation2: {
+                            type: 'divide',
+                            value: 0.42
+                        } // Dividir por 0.42
+                    }
+                },
+                notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología."
+            },
+            proveedor14: {
+                name: "Sendai Motors",
+                deliveryFixed: 0.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
@@ -1106,11 +884,65 @@
                         }, // Sumar 0%
                         operation2: {
                             type: 'divide',
-                            value: 0.55
-                        } // Dividir por 0.55
+                            value: 0.49
+                        } // Dividir por 0.49
                     }
                 },
-                notes: "Cálculo USD: (Monto - 18%) × 1.35 | Cálculo BS: (Monto ÷ 0.77) + 14%"
+                notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología."
+            },
+            proveedor15: {
+                name: "TVA Grupo 77",
+                deliveryFixed: 0.00, // Delivery fijo en USD
+                conditions: {
+                    USD: {
+                        operation1: {
+                            type: 'subtract',
+                            value: 0
+                        }, // Restar 0%
+                        operation2: {
+                            type: 'multiply',
+                            value: 1.40
+                        } // Multiplicar por 1.40
+                    },
+                    BS: {
+                        operation1: {
+                            type: 'subtract',
+                            value: 0
+                        }, // Restar 0%
+                        operation2: {
+                            type: 'divide',
+                            value: 0.42
+                        } // Dividir por 0.42
+                    }
+                },
+                notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología."
+            },
+            proveedor16: {
+                name: "Volker",
+                deliveryFixed: 5.00, // Delivery fijo en USD
+                conditions: {
+                    USD: {
+                        operation1: {
+                            type: 'subtract',
+                            value: 25.00
+                        }, // Restar 25%
+                        operation2: {
+                            type: 'multiply',
+                            value: 1.40
+                        } // Multiplicar por 1.40
+                    },
+                    BS: {
+                        operation1: {
+                            type: 'subtract',
+                            value: 25.00
+                        }, // Restar 25%
+                        operation2: {
+                            type: 'divide',
+                            value: 0.49
+                        } // Dividir por 0.49
+                    }
+                },
+                notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología."
             },
         };
 

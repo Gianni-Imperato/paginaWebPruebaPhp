@@ -617,14 +617,14 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-shai">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaShai/imagenProductoShai3.jpeg')}}" class="img-fluid"
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaShai/imagenProductoShai4.jpeg')}}" class="img-fluid"
                 alt="Kit de Tren Delantero, Chery Grand Tigger 4x4 y 4x2">
               <div class="portfolio-info">
                 <h4>Kit de Tren Delantero, Chery Grand Tigger 4x4 y 4x2</h4>
                 <p>Repuestos Super Shai tiene todo tipo de repuestos para tu vehiculo y Camiones, tambien multimarcas!
                   Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza
                   ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaShai/imagenProductoShai3.jpeg')}}"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaShai/imagenProductoShai4.jpeg')}}"
                   title="Somos especialistas en repuestos para Camiones y multimarca, todo para tu vehiculo"
                   data-gallery="portfolio-gallery-shai" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i
@@ -633,14 +633,14 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-suspension">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaSuspension/imagenProductoSuspension2.jpeg')}}"
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaSuspension/imagenProductoSuspension4.jpeg')}}"
                 class="img-fluid" alt="Par Mesetas Superiores, Jeep Cherookee 4G">
               <div class="portfolio-info">
                 <h4>Par Mesetas Superiores, Jeep Cherookee 4G</h4>
                 <p>Repuestos Super Suspensión tiene todo tipo de repuestos para tu vehiculo, Suspensiones y Tren
                   Delanteros, tambien multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios,
                   promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaSuspension/imagenProductoSuspension2.jpeg')}}"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaSuspension/imagenProductoSuspension4.jpeg')}}"
                   title="Somos especialistas en Suspensiones y Tren Delanteros, tambien multimarca, todo para tu vehiculo"
                   data-gallery="portfolio-gallery-suspension" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
@@ -650,14 +650,14 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-victoria">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaVictoria/imagenProductoVictoria1.jpeg')}}" class="img-fluid"
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaVictoria/imagenProductoVictoria5.jpeg')}}" class="img-fluid"
                 alt="Kit de Tren Delantero, Chevrolet Optra">
               <div class="portfolio-info">
                 <h4>Kit de Tren Delantero, Chevrolet Optra</h4>
                 <p>Repuestos Super Victoria tiene todo tipo de repuestos para tu vehiculo, somos multimarcas! Ven y
                   aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza
                   ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaVictoria/imagenProductoVictoria1.jpeg')}}"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaVictoria/imagenProductoVictoria5.jpeg')}}"
                   title="Somos especialistas en repuestos multimarca, todo para tu vehiculo"
                   data-gallery="portfolio-gallery-victoria" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
@@ -667,14 +667,14 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-junin">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaJunin/imagenProductoJunin1.jpeg')}}" class="img-fluid"
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaJunin/imagenProductoJunin4.jpeg')}}" class="img-fluid"
                 alt="Chery Arauca y X1">
               <div class="portfolio-info">
                 <h4>Chery Arauca y X1</h4>
                 <p>Repuestos Super Junín tiene todo tipo de repuestos para tu vehiculo Chery, Jac, Dongfeng, Saic, Zotye
                   y Haima, tambien multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios,
                   promociones y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaJunin/imagenProductoJunin1.jpeg')}}"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaJunin/imagenProductoJunin4.jpeg')}}"
                   title="Somos especialistas en Chery, Jac, Dongfeng, Saic, Zotye y Haima"
                   data-gallery="portfolio-gallery-junin" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
@@ -684,14 +684,14 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-shaya">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaShaya/imagenProductoShaya3.jpeg')}}" class="img-fluid"
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaShaya/imagenProductoShaya4.jpeg')}}" class="img-fluid"
                 alt="Arranque, Mazda 3 y Mazda 6">
               <div class="portfolio-info">
                 <h4>Arranque, Mazda 3 y Mazda 6</h4>
                 <p>Repuestos Super Shaya tiene todo tipo de repuestos para tu vehiculo, somos multimarcas! Ven y
                   aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza
                   ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaShaya/imagenProductoShaya3.jpeg')}}"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaShaya/imagenProductoShaya4.jpeg')}}"
                   title="Somos especialistas en repuestos multimarca, todo para tu vehiculo"
                   data-gallery="portfolio-gallery-shaya" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
@@ -701,14 +701,14 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-casanova">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaCasanova/imagenProductoCasanova1.jpeg')}}" class="img-fluid"
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaCasanova/imagenProductoCasanova5.jpeg')}}" class="img-fluid"
                 alt="Mitsubishi, Kia y Hyundai">
               <div class="portfolio-info">
                 <h4>Mitsubishi, Kia y Hyundai</h4>
                 <p>Repuestos Super Casanova tiene todo tipo de repuestos para tu vehiculo Mitsubishi, Kia y Hyundai,
                   tambien multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones
                   y descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaCasanova/imagenProductoCasanova1.jpeg')}}"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaCasanova/imagenProductoCasanova5.jpeg')}}"
                   title="Somos especialistas es Mitsubishi, Kia, Hyundai y multimarcas"
                   data-gallery="portfolio-gallery-casanova" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
@@ -717,49 +717,15 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-panteon2">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonDos/imagenProductoPanteonDos1.jpeg')}}"
-                class="img-fluid" alt="Base de Motor, Hyundai">
-              <div class="portfolio-info">
-                <h4>Base de Motor, Hyundai</h4>
-                <p>Repuestos Super Panteón 2 tiene todo tipo de repuestos para tu vehiculo ¡Somos multimarcas! Ven y
-                  aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza
-                  ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonDos/imagenProductoPanteonDos1.jpeg')}}"
-                  title="Somos especialistas en repuestos para tu vehiculo multimarca"
-                  data-gallery="portfolio-gallery-panteon2" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-repuestos1212">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaRepuestos1212/imagenProductoRepuestos12121.jpeg')}}"
-                class="img-fluid" alt="Modulo Bomba de Gasolina Completa, Explorer 4.6">
-              <div class="portfolio-info">
-                <h4>Modulo Bomba de Gasolina Completa, Explorer 4.6</h4>
-                <p>Tenemos todo tipo de repuestos para tu vehiculo Jeep y Ford, tambien somos multimarcas! Ven y
-                  aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza
-                  ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaRepuestos1212/imagenProductoRepuestos12121.jpeg')}}"
-                  title="Somos especialistas en repuestos Jeep, Ford y multimarca, todo para tu vehiculo"
-                  data-gallery="portfolio-gallery-repuestos1212" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-estrella">
-              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella3.jpeg')}}" class="img-fluid"
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella4.jpeg')}}" class="img-fluid"
                 alt="Bomba de Dirección, Chevrolet">
               <div class="portfolio-info">
                 <h4>Bomba de Dirección, Chevrolet</h4>
                 <p>Tenemos todo tipo de repuestos para tu vehiculo Fiat, Volkswagen y Renault, tambien somos
                   multimarcas! Ven y aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y
                   descuentos. Cotiza ahora!</p>
-                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella3.jpeg')}}"
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaEstrella/imagenProductoEstrella4.jpeg')}}"
                   title="Somos especialistas en repuestos Fiat, Volkswagen, Renault y multimarca, todo para tu vehiculo"
                   data-gallery="portfolio-gallery-estrella" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
@@ -768,6 +734,39 @@
               </div>
             </div><!-- End Portfolio Item -->
 
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-repuestos1212">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaRepuestos1212/imagenTiendaRepuestos12126.jpeg')}}"
+                class="img-fluid" alt="Modulo Bomba de Gasolina Completa, Explorer 4.6">
+              <div class="portfolio-info">
+                <h4>Modulo Bomba de Gasolina Completa, Explorer 4.6</h4>
+                <p>Tenemos todo tipo de repuestos para tu vehiculo Jeep y Ford, tambien somos multimarcas! Ven y
+                  aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza
+                  ahora!</p>
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaRepuestos1212/imagenTiendaRepuestos12126.jpeg')}}"
+                  title="Somos especialistas en repuestos Jeep, Ford y multimarca, todo para tu vehiculo"
+                  data-gallery="portfolio-gallery-repuestos1212" class="glightbox preview-link"><i
+                    class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-panteon2">
+              <img src="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonDos/imagenProductoPanteonDos33.jpeg')}}"
+                class="img-fluid" alt="Base de Motor, Hyundai">
+              <div class="portfolio-info">
+                <h4>Base de Motor, Hyundai</h4>
+                <p>Repuestos Super Panteón 2 tiene todo tipo de repuestos para tu vehiculo ¡Somos multimarcas! Ven y
+                  aprovecha nuestros <span class="resaltar">SUPER</span> precios, promociones y descuentos. Cotiza
+                  ahora!</p>
+                <a href="{{asset('assets/images/imagenesTiendas/imagenTiendaPanteonDos/imagenProductoPanteonDos33.jpeg')}}"
+                  title="Somos especialistas en repuestos para tu vehiculo multimarca"
+                  data-gallery="portfolio-gallery-panteon2" class="glightbox preview-link"><i
+                    class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
 
           </div><!-- End Portfolio Container -->
 
