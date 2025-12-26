@@ -423,7 +423,7 @@
             <label class="input-label">Seleccionar Proveedor</label>
             <select class="provider-select" id="providerSelect">
                 <option value="">Seleccione un proveedor...</option>
-                <option value="proveedor1">Garcoli</option>
+                <option value="proveedor1">Ancov</option>
                 <option value="proveedor2">Asiamerica</option>
                 <option value="proveedor3">Autopartes</option>
                 <option value="proveedor4">Basesmotor</option>
@@ -432,15 +432,13 @@
                 <option value="proveedor7">Chino 2</option>
                 <option value="proveedor8">Chino 3</option>
                 <option value="proveedor9">Epic</option>
-                <option value="proveedor10">Rusmorus</option>
+                <option value="proveedor10">Ford Rusmorus</option>
                 <option value="proveedor11">Hanei Motors</option>
                 <option value="proveedor12">Italven</option>
-                <option value="proveedor13">Gran Import</option>
+                <option value="proveedor13">Jeep Rusmorus</option>
                 <option value="proveedor14">Sendai Motors</option>
                 <option value="proveedor15">TVA Grupo 77</option>
                 <option value="proveedor16">Volker</option>
-                <option value="proveedor17">Rodalven</option>
-                <option value="proveedor18">Croche CH3</option>
             </select>
         </div>
 
@@ -510,12 +508,12 @@
         // TASA DE CAMBIO CENTRALIZADA
         // Solo cambiar aquí para actualizar toda la calculadora
         // ==========================================
-        const GLOBAL_EXCHANGE_RATE = 291.35; // ← CAMBIAR SOLO AQUÍ DIARIAMENTE
+        const GLOBAL_EXCHANGE_RATE = 218.17; // ← CAMBIAR SOLO AQUÍ DIARIAMENTE
 
         // Configuración de proveedores con condiciones duales USD/BS
         const providerConfig = {
             proveedor1: {
-                name: "Garcoli",
+                name: "Ancov",
                 deliveryFixed: 0.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
@@ -535,15 +533,15 @@
                         }, // Sumar 0%
                         operation2: {
                             type: 'divide',
-                            value: 0.42
-                        } // Dividir entre 0.42
+                            value: 0.40
+                        } // Dividir por 0.40
                     }
                 },
                 notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología.",
             },
             proveedor2: {
                 name: "Asiamerica",
-                deliveryFixed: 1.00, // Delivery fijo en USD
+                deliveryFixed: 3.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
@@ -562,8 +560,8 @@
                         }, // Restar 0%
                         operation2: {
                             type: 'divide',
-                            value: 0.45
-                        } // Dividir por 0.45
+                            value: 0.49
+                        } // Dividir por 0.49
                     }
                 },
                 notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología."
@@ -579,8 +577,8 @@
                         }, // Restar 0%
                         operation2: {
                             type: 'divide',
-                            value: 0.45
-                        } // Dividir por 0.45
+                            value: 0.50
+                        } // Dividir por 0.50
                     },
                     BS: {
                         operation1: {
@@ -589,8 +587,8 @@
                         }, // Sumar 0%
                         operation2: {
                             type: 'divide',
-                            value: 0.45
-                        } // Dividir por 0.45
+                            value: 0.50
+                        } // Dividir por 0.50
                     }
                 },
                 notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología."
@@ -624,7 +622,7 @@
             },
             proveedor5: {
                 name: "Bravo Import",
-                deliveryFixed: 5.00, // Delivery fijo en USD
+                deliveryFixed: 0.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
@@ -633,8 +631,8 @@
                         }, // Restar 0%
                         operation2: {
                             type: 'multiply',
-                            value: 1.40
-                        } // Multiplicar por 1.40
+                            value: 1.50
+                        } // Multiplicar por 1.50
                     },
                     BS: {
                         operation1: {
@@ -643,8 +641,8 @@
                         }, // Sumar 0%
                         operation2: {
                             type: 'multiply',
-                            value: 1.60
-                        } // Multiplicar por 1.60
+                            value: 1.50
+                        } // Multiplicar por 1.50
                     }
                 },
                 notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología."
@@ -656,8 +654,8 @@
                     USD: {
                         operation1: {
                             type: 'subtract',
-                            value: 0
-                        }, // Restar 0
+                            value: 10
+                        }, // Restar 10%
                         operation2: {
                             type: 'multiply',
                             value: 1.40
@@ -666,12 +664,12 @@
                     BS: {
                         operation1: {
                             type: 'subtract',
-                            value: 0
-                        }, // Restar 0
+                            value: 10
+                        }, // Restar 10%
                         operation2: {
                             type: 'divide',
-                            value: 0.45
-                        } // Dividir por 0.45
+                            value: 0.55
+                        } // Dividir por 0.55
                     }
                 },
                 notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología."
@@ -724,8 +722,8 @@
                         }, // Sumar 0%
                         operation2: {
                             type: 'divide',
-                            value: 0.44
-                        } // Dividir por 0.44
+                            value: 0.42
+                        } // Dividir por 0.42
                     }
                 },
                 notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología."
@@ -751,21 +749,21 @@
                         }, // Sumar 0%
                         operation2: {
                             type: 'divide',
-                            value: 0.44
-                        } // Dividir por 0.44
+                            value: 0.42
+                        } // Dividir por 0.42
                     }
                 },
                 notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología."
             },
             proveedor10: {
-                name: "Rusmorus",
+                name: "Ford Rusmorus",
                 deliveryFixed: 0.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
                             type: 'subtract',
-                            value: 0
-                        }, // Restar 0%
+                            value: 50.65
+                        }, // Restar 50.50%
                         operation2: {
                             type: 'multiply',
                             value: 1.40
@@ -774,8 +772,8 @@
                     BS: {
                         operation1: {
                             type: 'subtract',
-                            value: 0
-                        }, // Restar 0%
+                            value: 50.65
+                        }, // Restar 50.50%
                         operation2: {
                             type: 'divide',
                             value: 0.42
@@ -805,8 +803,8 @@
                         }, // Sumar 0%
                         operation2: {
                             type: 'divide',
-                            value: 0.45
-                        } // Dividir por 0.45
+                            value: 0.49
+                        } // Dividir por 0.49
                     }
                 },
                 notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología."
@@ -831,7 +829,7 @@
                             value: 116
                         }, // Sumar 116%
                         operation2: {
-                            type: 'divide',
+                            type: 'multiply',
                             value: 1
                         } // Multiplicar por 1
                     }
@@ -839,14 +837,14 @@
                 notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología."
             },
             proveedor13: {
-                name: "Gran Import",
-                deliveryFixed: 5.00, // Delivery fijo en USD
+                name: "Jeep Rusmorus",
+                deliveryFixed: 0.00, // Delivery fijo en USD
                 conditions: {
                     USD: {
                         operation1: {
                             type: 'subtract',
-                            value: 0
-                        }, // Restar 0%
+                            value: 50.65
+                        }, // Restar 50.50%
                         operation2: {
                             type: 'multiply',
                             value: 1.40
@@ -855,12 +853,12 @@
                     BS: {
                         operation1: {
                             type: 'subtract',
-                            value: 0
-                        }, // Restar 0%
+                            value: 50.65
+                        }, // Restar 50.50%
                         operation2: {
                             type: 'divide',
-                            value: 0.45
-                        } // Dividir por 0.45
+                            value: 0.42
+                        } // Dividir por 0.42
                     }
                 },
                 notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología."
@@ -886,8 +884,8 @@
                         }, // Sumar 0%
                         operation2: {
                             type: 'divide',
-                            value: 0.45
-                        } // Dividir por 0.45
+                            value: 0.49
+                        } // Dividir por 0.49
                     }
                 },
                 notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología."
@@ -926,8 +924,8 @@
                     USD: {
                         operation1: {
                             type: 'subtract',
-                            value: 0
-                        }, // Restar 0%
+                            value: 25.00
+                        }, // Restar 25%
                         operation2: {
                             type: 'multiply',
                             value: 1.40
@@ -936,66 +934,12 @@
                     BS: {
                         operation1: {
                             type: 'subtract',
-                            value: 0
-                        }, // Restar 0%
+                            value: 25.00
+                        }, // Restar 25%
                         operation2: {
                             type: 'divide',
-                            value: 0.44
-                        } // Dividir por 0.44
-                    }
-                },
-                notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología."
-            },
-            proveedor17: {
-                name: "Rodalven",
-                deliveryFixed: 0.00, // Delivery fijo en USD
-                conditions: {
-                    USD: {
-                        operation1: {
-                            type: 'subtract',
-                            value: 0
-                        }, // Restar 0%
-                        operation2: {
-                            type: 'multiply',
-                            value: 1.40
-                        } // Multiplicar por 1.40
-                    },
-                    BS: {
-                        operation1: {
-                            type: 'add',
-                            value: 0
-                        }, // Sumar 0%
-                        operation2: {
-                            type: 'divide',
-                            value: 0.45
-                        } // Dividir por 0.45
-                    }
-                },
-                notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología."
-            },
-            proveedor18: {
-                name: "Croche CH3",
-                deliveryFixed: 0.00, // Delivery fijo en USD
-                conditions: {
-                    USD: {
-                        operation1: {
-                            type: 'subtract',
-                            value: 0
-                        }, // Restar 0%
-                        operation2: {
-                            type: 'multiply',
-                            value: 1.40
-                        } // Multiplicar por 1.40
-                    },
-                    BS: {
-                        operation1: {
-                            type: 'subtract',
-                            value: 0
-                        }, // Restar 0%
-                        operation2: {
-                            type: 'divide',
-                            value: 0.44
-                        } // Dividir por 0.44
+                            value: 0.49
+                        } // Dividir por 0.49
                     }
                 },
                 notes: "En caso de presentar algun inconveniente, reportarlo inmediatamente al área de Desarrollo y Tecnología."
